@@ -54,7 +54,10 @@ def is_raster_grid_table(image_bytes: bytes, minimum_lines: int = 3) -> bool:
     matches: int = 0
     for y in rows:
         for x in columns:
-            if any(dark[yy * width + xx] for yy in range(max(0, y - 2), min(height, y + 3))
-                   for xx in range(max(0, x - 2), min(width, x + 3))):
+            if any(
+                dark[yy * width + xx]
+                for yy in range(max(0, y - 2), min(height, y + 3))
+                for xx in range(max(0, x - 2), min(width, x + 3))
+            ):
                 matches += 1
     return matches >= int(0.75 * len(rows) * len(columns))

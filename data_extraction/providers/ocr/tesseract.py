@@ -11,7 +11,7 @@ from PIL import Image
 from ...shared.models import ProviderTextResult
 from ..contracts import OCRTextRegion
 from .table_geometry import OCRWord, reconstruct_candidate_table
-from ..native.image_layout import is_raster_grid_table
+from data_extraction.inspect_document.inspectors.raster_table_hint import is_raster_grid_table
 
 
 @dataclass(frozen=True, slots=True)

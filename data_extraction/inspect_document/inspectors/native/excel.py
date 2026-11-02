@@ -5,7 +5,7 @@ import io
 from openpyxl import load_workbook
 from openpyxl.workbook.workbook import Workbook
 from PIL import Image
-from data_extraction.providers.native.image_layout import is_raster_grid_table
+from ..raster_table_hint import is_raster_grid_table
 from .common import _ensure_regions
 from data_extraction.shared.models import (CandidateRegion, FileKind,
     InspectedDocument, PageCandidates, PageKind, RegionKind, BoundingBox,

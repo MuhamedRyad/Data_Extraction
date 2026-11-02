@@ -1,2 +1,2 @@
-"""Backward-compatible import path; implementation lives in data_extraction.providers.native.image_layout."""
-from data_extraction.providers.native.image_layout import *  # noqa: F401,F403
+"""Backward-compatible import path for raster table hints."""
+from data_extraction.inspect_document.inspectors.raster_table_hint import *  # noqa: F401,F403
