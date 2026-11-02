@@ -1,0 +1,33 @@
+{
+  "version": "0.20.0",
+  "feature": "independent_ai_template_review",
+  "result": "passed",
+  "total_tests": 363,
+  "new_v20_tests": 6,
+  "template_regression_tests": 38,
+  "compileall": "passed",
+  "critical_semantic_swap_test": {
+    "scenario": "TOTAL bbox deliberately points to Subtotal value region",
+    "core_geometry_schema_validation": "passed",
+    "review_verdict": "reject",
+    "issue_code": "semantic_value_region_mismatch",
+    "issue_field": "total",
+    "approval": "blocked",
+    "approval_error": "TEMPLATE_AI_REVIEW_REJECTED"
+  },
+  "review_policy": {
+    "pass": "eligible for explicit human approval",
+    "review_required": "triaged to explicit human approval",
+    "reject": "approval blocked until candidate changes",
+    "stale_review_hash": "rejected",
+    "low_confidence_pass": "downgraded_to_review_required"
+  },
+  "openai_adapter_test": {
+    "transport": "mock_http",
+    "visual_sent": true,
+    "candidate_sent": true,
+    "strict_schema": "document_template_semantic_review",
+    "separate_reviewer_adapter": true,
+    "live_external_model_called": false
+  }
+}

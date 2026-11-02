@@ -1,0 +1,10 @@
+{
+  "version": "0.20.0",
+  "wheel": "generic_data_extraction_feature-0.20.0-py3-none-any.whl",
+  "clean_install": "passed",
+  "installed_module": "/mnt/data/v20_clean_install/data_extraction/__init__.py",
+  "semantic_swap_review_verdict": "reject",
+  "core_geometry_schema_validation": "passed",
+  "approval_blocked": true,
+  "approval_error": "TEMPLATE_AI_REVIEW_REJECTED"
+}

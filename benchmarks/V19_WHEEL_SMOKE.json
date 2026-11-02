@@ -1,0 +1,30 @@
+{
+  "installed_module_path": "/mnt/data/v19_clean_install/data_extraction/__init__.py",
+  "wheel_version": "0.19.0",
+  "match_score": 1.0,
+  "match_status": "accepted",
+  "generic_extraction_performed": false,
+  "field_exact_count": 5,
+  "table_exact": true,
+  "summary_rows_leaked": false,
+  "table_rows": [
+    [
+      "Blue Pen",
+      "2",
+      "12.50",
+      "25.00"
+    ],
+    [
+      "Notebook Pack",
+      "1",
+      "40.00",
+      "40.00"
+    ],
+    [
+      "Desk Lamp",
+      "1",
+      "48.50",
+      "48.50"
+    ]
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": "0.21.0",
+  "scenario": "existing NOVA repeated invoice adaptive route",
+  "source_documents": ["invoice_first.png", "invoice_second.png"],
+  "ocr": "local Tesseract",
+  "ai_generation_calls": 0,
+  "ai_refinement_calls": 1,
+  "ai_reviewer_calls": 1,
+  "initial_candidate_quality": 0.566,
+  "final_candidate_quality": 0.8742857142857144,
+  "route": "deterministic_refine_review",
+  "repeated_document": {
+    "match_score": 1.0,
+    "match_status": "accepted",
+    "generic_extraction_performed": false,
+    "semantic_complete": true,
+    "fields": {
+      "invoice_number": {"value": "INV-2026-102", "expected": "INV-2026-102", "exact": true, "status": "verified_consensus"},
+      "date": {"value": "02/11/2026", "expected": "02/11/2026", "exact": true, "status": "verified_consensus"},
+      "subtotal": {"value": "113.50", "expected": "113.50", "exact": true, "status": "verified_consensus"},
+      "tax": {"value": "5.68", "expected": "5.68", "exact": true, "status": "verified_consensus"},
+      "total": {"value": "119.18", "expected": "119.18", "exact": true, "status": "verified_consensus"}
+    },
+    "exact_fields": "5/5"
+  },
+  "limits": [
+    "OCR and field crops used real local Tesseract.",
+    "The refinement and reviewer providers were controlled simulations; no live external AI model was called.",
+    "This benchmark validates routing/cost shape and repeated extraction behavior, not live-model template quality."
+  ]
+}

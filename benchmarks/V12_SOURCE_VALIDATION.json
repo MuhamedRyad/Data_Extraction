@@ -1,0 +1,51 @@
+{
+  "shnayer_first5_vs_original": {
+    "original": "ش__ناير_2026.pdf",
+    "derived": "shnayer_first5.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "same_render": true,
+        "same_text": true,
+        "render_sha256": "26a2c4b4f6c56dd2304003bcf6802cdae4de13da26d9ffe3ad746134f453cc28",
+        "text_sha256": "00278c32b7bb2046b1ca34b1101dcf901949e705d02c877ca85800e800ecd326"
+      },
+      {
+        "page": 2,
+        "same_render": true,
+        "same_text": true,
+        "render_sha256": "c722ebb52b21ec13718a6e7b887e7a618bc334b9951073761c6492543c543d4e",
+        "text_sha256": "87fc567fa519d12f007a7fdb39838eac68720f2e80bdec552c23ad545a89528e"
+      },
+      {
+        "page": 3,
+        "same_render": true,
+        "same_text": true,
+        "render_sha256": "a0240d9b77d4fc8d3445f55d3840bc078d0a33a3e39ee565fb1488c97cb35624",
+        "text_sha256": "e1709b57eb0a2829dcd931e67f4d98409ec2910619c24dda150349323f6281aa"
+      },
+      {
+        "page": 4,
+        "same_render": true,
+        "same_text": true,
+        "render_sha256": "ca24ade12b84fbf395bc5ec93d8844e0ea3685f832dbb09be966b386a40b1a5a",
+        "text_sha256": "365bae9d320b4956970724fce30c91859fd01072f0e12fe90af75c6b691c9892"
+      },
+      {
+        "page": 5,
+        "same_render": true,
+        "same_text": true,
+        "render_sha256": "1fe2ae01cb921738a3439a64a9afc359381a8ab06aa79020162b512dbb05f797",
+        "text_sha256": "a1285a715c14034cb05a0beee85cae23ca8fb5cfe7de3635000d7031ee0d9b30"
+      }
+    ],
+    "all_five_render_match": true,
+    "all_five_text_match": true
+  },
+  "consumer_rights_original_available": false,
+  "ministry_user_guide_original_available": false,
+  "notes": [
+    "Consumer Rights and Ministry Guide exact local-path files were not present in this runtime, so no visual re-validation is claimed for them.",
+    "The shnayer derived sample was verified against the available original using raster bytes and extracted text."
+  ]
+}

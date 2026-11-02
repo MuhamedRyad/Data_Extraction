@@ -1,0 +1,38 @@
+{
+  "version": "0.14.0",
+  "tests_passed": 325,
+  "tests_failed": 0,
+  "real_tesseract_borderless_receipt": {
+    "engine": "Tesseract eng",
+    "confidence": 0.9573406593406594,
+    "table": [
+      [
+        "Blue Pen",
+        "10.00"
+      ],
+      [
+        "Large Notebook Pack",
+        "20.00"
+      ],
+      [
+        "TOTAL",
+        "30.00"
+      ]
+    ],
+    "field_candidates": {
+      "merchant_name": "ACME MARKET",
+      "address": "123 MAIN STREET",
+      "date": "31/10/2026",
+      "total": "30.00"
+    },
+    "semantic_complete": false,
+    "note": "Real OCR integration test; not SROIE accuracy proof."
+  },
+  "targeted_fixes": [
+    "structured_suspicion_gate",
+    "merchant_candidate_filtering",
+    "toc_outer_page_reference_binding",
+    "legal_provision_false_toc_rejection",
+    "flexible_financial_token_table_reconstruction"
+  ]
+}

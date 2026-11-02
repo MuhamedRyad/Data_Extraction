@@ -1,0 +1,24 @@
+{
+  "checkpoint": "v0.7.0",
+  "baseline_version": "v0.6.0",
+  "schema_version": "extraction.v0.6",
+  "test_cases_total": 263,
+  "old_tests": 230,
+  "new_tests": 33,
+  "baseline_parity": [
+    {
+      "filename": "extraction_quality_test_v2_5pages.pdf",
+      "inspect_sha256": "7c3c7b971718973357c663bd4a43080b976c3125a48d03b789612153bfa9f06b",
+      "extract_sha256": "f64651a4f7e0196e741e378f9bfab37bf622c10caca9590983f89ed7befd204a"
+    },
+    {
+      "filename": "synthetic_table_page.pdf",
+      "inspect_sha256": "878ad6c08e832e5b099ccde3a8ba4d252046d7abf1925bb095c442e12e90868f",
+      "extract_sha256": "a731d2d562244c85b5a40c47d0af730dc9a7c062ab798bcec733101756d10a0a"
+    }
+  ],
+  "parity_configuration": "ImageRoute.DISABLED, native parsers, no live optional models",
+  "cli_stdout_json_verified": true,
+  "live_docling_or_unstructured_inference": false,
+  "assertion": "Refactoring behavioral equivalence on tested files; not inference accuracy"
+}

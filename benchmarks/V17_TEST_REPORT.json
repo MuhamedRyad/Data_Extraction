@@ -1,0 +1,25 @@
+{
+  "version": "0.17.0",
+  "status": "passed",
+  "tests_collected": 349,
+  "tests_passed": 349,
+  "tests_failed": 0,
+  "compileall": "passed",
+  "wheel_build": "passed",
+  "clean_install": "passed",
+  "wheel_smoke": "passed",
+  "new_v17_tests": 6,
+  "verified_behaviors": [
+    "native PDF text causes zero AI calls",
+    "strong ordinary OCR causes zero AI calls",
+    "low-confidence OCR automatically escalates to AI Vision when OPENAI_API_KEY is configured",
+    "strong flat structured invoice OCR automatically escalates to AI when structure is missing",
+    "auto_enable_ai=false disables automatic external AI routing",
+    "template AI provider is automatically configured from the same OPENAI_API_KEY"
+  ],
+  "notes": [
+    "Full regression was executed in independent groups to avoid single-process timeout.",
+    "OpenAI HTTP calls in tests and wheel smoke were mocked; no live external model request was made because no real API key was available.",
+    "AI output remains non-authoritative review evidence unless deterministic/independent verification proves sensitive values."
+  ]
+}

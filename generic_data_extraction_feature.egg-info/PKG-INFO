@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: generic-data-extraction-feature
+Version: 0.24.0
+Requires-Python: >=3.11
+Requires-Dist: PyMuPDF<2,>=1.24
+Requires-Dist: python-docx<2,>=1.1
+Requires-Dist: openpyxl<4,>=3.1
+Requires-Dist: Pillow<13,>=10
+Requires-Dist: pydantic<3,>=2.10
+Provides-Extra: docling
+Requires-Dist: docling<3,>=2.0; extra == "docling"
+Provides-Extra: unstructured
+Requires-Dist: unstructured[pdf]<1,>=0.15; extra == "unstructured"
+Provides-Extra: ocr
+Requires-Dist: pytesseract<1,>=0.3.10; extra == "ocr"
+Provides-Extra: easyocr
+Requires-Dist: easyocr<2,>=1.7; extra == "easyocr"
+Requires-Dist: numpy<3,>=1.26; extra == "easyocr"
+Provides-Extra: openai
+Requires-Dist: httpx<1,>=0.27; extra == "openai"
+Provides-Extra: dev
+Requires-Dist: pytest<10,>=8; extra == "dev"
+Requires-Dist: reportlab<5,>=4; extra == "dev"
+Requires-Dist: httpx<1,>=0.27; extra == "dev"
+Requires-Dist: ruff<1,>=0.8; extra == "dev"
+Requires-Dist: mypy<2,>=1.13; extra == "dev"

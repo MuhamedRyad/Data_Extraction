@@ -1,0 +1,32 @@
+{
+  "v0.9.0": {
+    "large_image": {
+      "ok": false,
+      "code": "IMAGE_TOO_LARGE"
+    },
+    "weak_ocr": {
+      "route_reason": "ocr_fallback_after_failed_model",
+      "confidence": 0.3,
+      "calls": 1,
+      "method": "ocr",
+      "content_complete": null,
+      "status": null
+    }
+  },
+  "v0.10.0": {
+    "large_image": {
+      "ok": true,
+      "warnings": [
+        "image_downscaled_for_processing_review"
+      ]
+    },
+    "weak_ocr": {
+      "route_reason": "ocr_tiled_recovery",
+      "confidence": 0.9499999999999998,
+      "calls": 5,
+      "method": "ocr",
+      "content_complete": true,
+      "status": "complete_with_review"
+    }
+  }
+}

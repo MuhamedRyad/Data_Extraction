@@ -1,0 +1,86 @@
+{
+  "language": "ar",
+  "approved": true,
+  "approval_error": null,
+  "route": "deterministic_refine_review",
+  "initial_quality": 0.8800000000000001,
+  "hard_failures": [],
+  "review": "pass",
+  "review_issues": [],
+  "diagnostics": [
+    "template_bootstrap_without_ai_requires_approval",
+    "deterministic_template_may_need_ai_geometry_refinement",
+    "adaptive_template_routing_enabled",
+    "adaptive_candidate_quality:0.520",
+    "adaptive_required_field_coverage:1.000",
+    "adaptive_geometry_precision:0.100",
+    "adaptive_anchor_coverage:1.000",
+    "adaptive_schema_valid_ratio:0.000",
+    "adaptive_table_structure_ratio:1.000",
+    "template_geometry_refinement_attempt:1",
+    "template_geometry_refined_by_ai_provider",
+    "benchmark_oracle_geometry_refined",
+    "template_geometry_refinement_attempts_exhausted",
+    "template_geometry_self_validation_incomplete",
+    "template_ai_review_passed",
+    "benchmark_oracle_semantic_review",
+    "adaptive_route:deterministic_refine_review"
+  ],
+  "generate_calls": 0,
+  "refine_calls": 1,
+  "review_calls": 1,
+  "repeat_match": 1.0,
+  "repeat_status": "accepted",
+  "repeat_fast_path": true,
+  "repeat_fields": {
+    "merchant_name": "",
+    "total": "486.15",
+    "invoice_number": "INV-2026-621",
+    "date": "14/11/2026"
+  },
+  "repeat_details": {
+    "merchant_name": {
+      "value": null,
+      "status": "value_region_not_found",
+      "verified": false,
+      "reasons": [
+        "template_field_crop_failed"
+      ]
+    },
+    "total": {
+      "value": "486.15",
+      "status": "review_required",
+      "verified": false,
+      "reasons": [
+        "template_direct_crop_requires_independent_consensus",
+        "insufficient_independent_consensus"
+      ]
+    },
+    "invoice_number": {
+      "value": "INV-2026-621",
+      "status": "review_required",
+      "verified": false,
+      "reasons": [
+        "template_direct_crop_requires_independent_consensus",
+        "insufficient_independent_consensus"
+      ]
+    },
+    "date": {
+      "value": "14/11/2026",
+      "status": "review_required",
+      "verified": false,
+      "reasons": [
+        "template_direct_crop_requires_independent_consensus",
+        "insufficient_independent_consensus"
+      ]
+    }
+  },
+  "repeat_exact": {
+    "invoice_number": true,
+    "date": true,
+    "total": true
+  },
+  "repeat_all_exact": true,
+  "repeat_semantic_complete": false,
+  "crop_calls": 9
+}

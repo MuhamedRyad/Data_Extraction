@@ -1,0 +1,262 @@
+{
+  "summary": {
+    "language": "ar",
+    "documents": 8,
+    "invoice_classified": 8,
+    "required_exact": 16,
+    "required_total": 24,
+    "all5_exact": 32,
+    "all5_total": 40,
+    "false_address_count": 0
+  },
+  "cases": [
+    {
+      "case": 0,
+      "language": "ar",
+      "degradation": "clean",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.8529437489871982,
+      "fields": {
+        "merchant_name": "Aypeفاتورة",
+        "subtotal": "1000.00",
+        "tax": "50.00",
+        "invoice_number": "INV-2026-800",
+        "date": "04/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": false
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": false
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 1,
+      "language": "ar",
+      "degradation": "blur",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.8306543191656828,
+      "fields": {
+        "merchant_name": "Aypeفاتورة",
+        "subtotal": "1003.00",
+        "tax": "50.15",
+        "invoice_number": "INV-2026-801",
+        "date": "05/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": false
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": false
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 2,
+      "language": "ar",
+      "degradation": "low_contrast",
+      "split": true,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.8218755531456066,
+      "fields": {
+        "merchant_name": "فاتورةضر.ببية",
+        "subtotal": "1006.00",
+        "tax": "50.30",
+        "invoice_number": "INV-2026-802",
+        "date": "06/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": false
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": false
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 3,
+      "language": "ar",
+      "degradation": "noise",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.8395248136444661,
+      "fields": {
+        "merchant_name": "dyneفاتورة",
+        "subtotal": "1009.00",
+        "tax": "50.45",
+        "invoice_number": "INV-2026-803",
+        "date": "07/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": false
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": false
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 4,
+      "language": "ar",
+      "degradation": "skew",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.8810653459731,
+      "fields": {
+        "merchant_name": "aypeفاتورة",
+        "subtotal": "1012.00",
+        "tax": "50.60",
+        "invoice_number": "INV-2026-804",
+        "date": "08/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": false
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": false
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 5,
+      "language": "ar",
+      "degradation": "clean",
+      "split": true,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.8529282328633934,
+      "fields": {
+        "merchant_name": "Aypeفاتورة",
+        "subtotal": "1015.00",
+        "tax": "50.75",
+        "invoice_number": "INV-2026-805",
+        "date": "09/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": false
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": false
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 6,
+      "language": "ar",
+      "degradation": "blur",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.8291190968122787,
+      "fields": {
+        "merchant_name": "Aypeفاتورة",
+        "subtotal": "1018.00",
+        "tax": "50.90",
+        "invoice_number": "INV-2026-806",
+        "date": "10/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": false
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": false
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 7,
+      "language": "ar",
+      "degradation": "noise",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.849729116026576,
+      "fields": {
+        "merchant_name": "dyneفاتورة",
+        "subtotal": "1021.00",
+        "tax": "51.05",
+        "invoice_number": "INV-2026-807",
+        "date": "11/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": false
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": false
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    }
+  ]
+}

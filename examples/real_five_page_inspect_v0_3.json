@@ -1,0 +1,2387 @@
+{
+  "source_id": "fixture:extraction-quality-v2",
+  "file_name": "extraction_quality_test_v2_5pages.pdf",
+  "sha256": "b199cc52d3a486376edaf55ddadb00820a2b5a84d5111725f08834c8f5054193",
+  "file_kind": "pdf",
+  "page_count": 5,
+  "pages": [
+    {
+      "number": 1,
+      "kind": "physical_page",
+      "label": "1",
+      "content_types": [
+        "text"
+      ],
+      "regions": [
+        {
+          "region_id": "p1:text:1",
+          "kind": "text",
+          "bbox": [
+            178.98895263671875,
+            45.354095458984375,
+            547.0770874023438,
+            89.70609283447266
+          ],
+          "preview": "نص أصلي مختلط عربي / إنجليزي- V2 اختبار",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 1,
+            "document_order_index": 1,
+            "source_stream_index": 1,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              178.98895263671875,
+              45.354095458984375,
+              547.0770874023438,
+              89.70609283447266
+            ],
+            "normalized_bbox": [
+              0.300683,
+              0.053872,
+              0.919032,
+              0.106553
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:2",
+          "kind": "text",
+          "bbox": [
+            234.04730224609375,
+            98.21031188964844,
+            547.1050415039062,
+            120.38631439208984
+          ],
+          "preview": "والحقول المختلطةRTL  الهدف: ترتيب-  فقطNative text - 5  من1 الصفحة",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 2,
+            "document_order_index": 2,
+            "source_stream_index": 2,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              234.04730224609375,
+              98.21031188964844,
+              547.1050415039062,
+              120.38631439208984
+            ],
+            "normalized_bbox": [
+              0.393175,
+              0.116655,
+              0.919079,
+              0.142995
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:3",
+          "kind": "text",
+          "bbox": [
+            460.88714599609375,
+            137.3941650390625,
+            547.0883178710938,
+            168.0176544189453
+          ],
+          "preview": "بيانات المعاملة",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 3,
+            "document_order_index": 3,
+            "source_stream_index": 3,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              460.88714599609375,
+              137.3941650390625,
+              547.0883178710938,
+              168.0176544189453
+            ],
+            "normalized_bbox": [
+              0.774242,
+              0.163197,
+              0.919051,
+              0.199572
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:4",
+          "kind": "text",
+          "bbox": [
+            96.33474731445312,
+            180.10635375976562,
+            547.065185546875,
+            202.91502380371094
+          ],
+          "preview": "رقم المرجع:REF-O01I8B-2026",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 4,
+            "document_order_index": 4,
+            "source_stream_index": 4,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              96.33474731445312,
+              180.10635375976562,
+              547.065185546875,
+              202.91502380371094
+            ],
+            "normalized_bbox": [
+              0.161832,
+              0.213931,
+              0.919012,
+              0.241023
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:5",
+          "kind": "text",
+          "bbox": [
+            96.23880004882812,
+            206.0335693359375,
+            547.0602416992188,
+            228.8422393798828
+          ],
+          "preview": ":رقم الطلبREQ-2026-000245",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 5,
+            "document_order_index": 5,
+            "source_stream_index": 5,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              96.23880004882812,
+              206.0335693359375,
+              547.0602416992188,
+              228.8422393798828
+            ],
+            "normalized_bbox": [
+              0.161671,
+              0.244727,
+              0.919003,
+              0.27182
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:6",
+          "kind": "text",
+          "bbox": [
+            114.92141723632812,
+            231.96075439453125,
+            547.08642578125,
+            254.76942443847656
+          ],
+          "preview": ":التاريخ\n - 2026  أغسطس22\n22/08/2026",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 6,
+            "document_order_index": 6,
+            "source_stream_index": 6,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              114.92141723632812,
+              231.96075439453125,
+              547.08642578125,
+              254.76942443847656
+            ],
+            "normalized_bbox": [
+              0.193056,
+              0.275524,
+              0.919047,
+              0.302616
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:7",
+          "kind": "text",
+          "bbox": [
+            114.56546020507812,
+            257.887939453125,
+            547.0805053710938,
+            281.85760498046875
+          ],
+          "preview": ":الوقت10:35 AM صباحًا10:35 -",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 7,
+            "document_order_index": 7,
+            "source_stream_index": 7,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              114.56546020507812,
+              257.887939453125,
+              547.0805053710938,
+              281.85760498046875
+            ],
+            "normalized_bbox": [
+              0.192458,
+              0.30632,
+              0.919037,
+              0.334792
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:8",
+          "kind": "text",
+          "bbox": [
+            112.58865356445312,
+            283.81512451171875,
+            547.064697265625,
+            306.623779296875
+          ],
+          "preview": ":الهاتف+965 5012 3456",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 8,
+            "document_order_index": 8,
+            "source_stream_index": 8,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              112.58865356445312,
+              283.81512451171875,
+              547.064697265625,
+              306.623779296875
+            ],
+            "normalized_bbox": [
+              0.189137,
+              0.337117,
+              0.919011,
+              0.364209
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:9",
+          "kind": "text",
+          "bbox": [
+            119.33865356445312,
+            309.7423400878906,
+            547.1137084960938,
+            332.5509948730469
+          ],
+          "preview": ":البريدsupport@test-company.com",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 9,
+            "document_order_index": 9,
+            "source_stream_index": 9,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              119.33865356445312,
+              309.7423400878906,
+              547.1137084960938,
+              332.5509948730469
+            ],
+            "normalized_bbox": [
+              0.200476,
+              0.367913,
+              0.919093,
+              0.395005
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:10",
+          "kind": "text",
+          "bbox": [
+            117.83865356445312,
+            335.6695251464844,
+            547.1069946289062,
+            358.4781799316406
+          ],
+          "preview": ":الرابطhttps://portal.example.com/request/000245",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 10,
+            "document_order_index": 10,
+            "source_stream_index": 10,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              117.83865356445312,
+              335.6695251464844,
+              547.1069946289062,
+              358.4781799316406
+            ],
+            "normalized_bbox": [
+              0.197956,
+              0.39871,
+              0.919082,
+              0.425802
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:11",
+          "kind": "text",
+          "bbox": [
+            408.87493896484375,
+            369.8168640136719,
+            547.1157836914062,
+            400.4403381347656
+          ],
+          "preview": "فقرة اختبار ترتيب القراءة",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 11,
+            "document_order_index": 11,
+            "source_stream_index": 11,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              408.87493896484375,
+              369.8168640136719,
+              547.1157836914062,
+              400.4403381347656
+            ],
+            "normalized_bbox": [
+              0.686867,
+              0.43927,
+              0.919097,
+              0.475645
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:12",
+          "kind": "text",
+          "bbox": [
+            57.46332550048828,
+            414.659912109375,
+            547.0964965820312,
+            437.46856689453125
+          ],
+          "preview": "تم استالم الطلب رقم REQ-2026-000245 د.ك. تم سداد دفعة أوىل125.500 ، وبلغت الرسوم22/08/2026  بتاريخ",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 12,
+            "document_order_index": 12,
+            "source_stream_index": 12,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              57.46332550048828,
+              414.659912109375,
+              547.0964965820312,
+              437.46856689453125
+            ],
+            "normalized_bbox": [
+              0.096532,
+              0.492535,
+              0.919064,
+              0.519627
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:13",
+          "kind": "text",
+          "bbox": [
+            156.98480224609375,
+            431.1645812988281,
+            547.086181640625,
+            455.13421630859375
+          ],
+          "preview": "بقيمة KWD 49.750\n. صباحًا11:00  في تمام الساعة2026-08-30 ، وحدد موعد المراجعة يوم",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 13,
+            "document_order_index": 13,
+            "source_stream_index": 13,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              156.98480224609375,
+              431.1645812988281,
+              547.086181640625,
+              455.13421630859375
+            ],
+            "normalized_bbox": [
+              0.263718,
+              0.512139,
+              0.919047,
+              0.54061
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:14",
+          "kind": "text",
+          "bbox": [
+            50.84223175048828,
+            458.1645812988281,
+            547.1034545898438,
+            480.9732360839844
+          ],
+          "preview": "يجب أن يحافظ االستخراج عىل ترتيب الكلمات العربية وعىل القيم اإلنجليزية داخل السطر من دون قلب أرقام ا",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 14,
+            "document_order_index": 14,
+            "source_stream_index": 14,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              50.84223175048828,
+              458.1645812988281,
+              547.1034545898438,
+              480.9732360839844
+            ],
+            "normalized_bbox": [
+              0.08541,
+              0.54421,
+              0.919076,
+              0.571302
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:15",
+          "kind": "text",
+          "bbox": [
+            491.71624755859375,
+            474.3645935058594,
+            547.0963745117188,
+            497.1732482910156
+          ],
+          "preview": "أرقام المراجع.",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 15,
+            "document_order_index": 15,
+            "source_stream_index": 15,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              491.71624755859375,
+              474.3645935058594,
+              547.0963745117188,
+              497.1732482910156
+            ],
+            "normalized_bbox": [
+              0.826031,
+              0.563452,
+              0.919064,
+              0.590544
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:16",
+          "kind": "text",
+          "bbox": [
+            424.17523193359375,
+            505.2073974609375,
+            547.0896606445312,
+            535.8308715820312
+          ],
+          "preview": "أرقام وحروف متشابهة",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 16,
+            "document_order_index": 16,
+            "source_stream_index": 16,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              424.17523193359375,
+              505.2073974609375,
+              547.0896606445312,
+              535.8308715820312
+            ],
+            "normalized_bbox": [
+              0.71257,
+              0.600087,
+              0.919053,
+              0.636462
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:17",
+          "kind": "text",
+          "bbox": [
+            354.35052490234375,
+            549.736328125,
+            517.0782470703125,
+            562.3070068359375
+          ],
+          "preview": "O vs 0: OCR-O015 / OCR-0015",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 17,
+            "document_order_index": 17,
+            "source_stream_index": 17,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              354.35052490234375,
+              549.736328125,
+              517.0782470703125,
+              562.3070068359375
+            ],
+            "normalized_bbox": [
+              0.595271,
+              0.652979,
+              0.868637,
+              0.66791
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:18",
+          "kind": "text",
+          "bbox": [
+            517.0866088867188,
+            549.736328125,
+            526.8926391601562,
+            562.3070068359375
+          ],
+          "preview": "•",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 18,
+            "document_order_index": 18,
+            "source_stream_index": 18,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              517.0866088867188,
+              549.736328125,
+              526.8926391601562,
+              562.3070068359375
+            ],
+            "normalized_bbox": [
+              0.868651,
+              0.652979,
+              0.885124,
+              0.66791
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:19",
+          "kind": "text",
+          "bbox": [
+            416.99456787109375,
+            566.2410888671875,
+            517.095703125,
+            578.811767578125
+          ],
+          "preview": "I vs 1 vs l: ID-I1l01",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 19,
+            "document_order_index": 19,
+            "source_stream_index": 19,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              416.99456787109375,
+              566.2410888671875,
+              517.095703125,
+              578.811767578125
+            ],
+            "normalized_bbox": [
+              0.700507,
+              0.672583,
+              0.868666,
+              0.687515
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:20",
+          "kind": "text",
+          "bbox": [
+            517.0866088867188,
+            566.2410888671875,
+            526.8926391601562,
+            578.811767578125
+          ],
+          "preview": "•",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 20,
+            "document_order_index": 20,
+            "source_stream_index": 20,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              517.0866088867188,
+              566.2410888671875,
+              526.8926391601562,
+              578.811767578125
+            ],
+            "normalized_bbox": [
+              0.868651,
+              0.672583,
+              0.885124,
+              0.687515
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:21",
+          "kind": "text",
+          "bbox": [
+            438.06195068359375,
+            582.7457275390625,
+            517.0823364257812,
+            595.31640625
+          ],
+          "preview": "B vs 8: B-8088",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 21,
+            "document_order_index": 21,
+            "source_stream_index": 21,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              438.06195068359375,
+              582.7457275390625,
+              517.0823364257812,
+              595.31640625
+            ],
+            "normalized_bbox": [
+              0.735898,
+              0.692188,
+              0.868644,
+              0.707119
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:22",
+          "kind": "text",
+          "bbox": [
+            517.0866088867188,
+            582.7457275390625,
+            526.8926391601562,
+            595.31640625
+          ],
+          "preview": "•",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 22,
+            "document_order_index": 22,
+            "source_stream_index": 22,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              517.0866088867188,
+              582.7457275390625,
+              526.8926391601562,
+              595.31640625
+            ],
+            "normalized_bbox": [
+              0.868651,
+              0.692188,
+              0.885124,
+              0.707119
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:23",
+          "kind": "text",
+          "bbox": [
+            439.16937255859375,
+            599.2504272460938,
+            517.0881958007812,
+            611.8211059570312
+          ],
+          "preview": "S vs 5: S5-505",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 23,
+            "document_order_index": 23,
+            "source_stream_index": 23,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              439.16937255859375,
+              599.2504272460938,
+              517.0881958007812,
+              611.8211059570312
+            ],
+            "normalized_bbox": [
+              0.737758,
+              0.711792,
+              0.868653,
+              0.726724
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:24",
+          "kind": "text",
+          "bbox": [
+            517.0866088867188,
+            599.2504272460938,
+            526.8926391601562,
+            611.8211059570312
+          ],
+          "preview": "•",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 24,
+            "document_order_index": 24,
+            "source_stream_index": 24,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              517.0866088867188,
+              599.2504272460938,
+              526.8926391601562,
+              611.8211059570312
+            ],
+            "normalized_bbox": [
+              0.868651,
+              0.711792,
+              0.885124,
+              0.726724
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:25",
+          "kind": "text",
+          "bbox": [
+            438.08392333984375,
+            615.755126953125,
+            517.0827026367188,
+            628.3258056640625
+          ],
+          "preview": "Z vs 2: Z2-202",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 25,
+            "document_order_index": 25,
+            "source_stream_index": 25,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              438.08392333984375,
+              615.755126953125,
+              517.0827026367188,
+              628.3258056640625
+            ],
+            "normalized_bbox": [
+              0.735935,
+              0.731396,
+              0.868644,
+              0.746328
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:26",
+          "kind": "text",
+          "bbox": [
+            517.0866088867188,
+            615.755126953125,
+            526.8926391601562,
+            628.3258056640625
+          ],
+          "preview": "•",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 26,
+            "document_order_index": 26,
+            "source_stream_index": 26,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              517.0866088867188,
+              615.755126953125,
+              526.8926391601562,
+              628.3258056640625
+            ],
+            "normalized_bbox": [
+              0.868651,
+              0.731396,
+              0.885124,
+              0.746328
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:27",
+          "kind": "text",
+          "bbox": [
+            82.35618591308594,
+            645.27783203125,
+            534.9969482421875,
+            667.9161376953125
+          ],
+          "preview": ". فقط، وال توجد مراجعة إذا كان ترتيب القراءة صحيحًاnative blocks :. المتوقعOCR هذه الصفحة يجب أال تس",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 27,
+            "document_order_index": 27,
+            "source_stream_index": 27,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              82.35618591308594,
+              645.27783203125,
+              534.9969482421875,
+              667.9161376953125
+            ],
+            "normalized_bbox": [
+              0.13835,
+              0.766464,
+              0.898738,
+              0.793353
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p1:text:28",
+          "kind": "text",
+          "bbox": [
+            221.70469665527344,
+            800.2042236328125,
+            373.5797424316406,
+            819.2122802734375
+          ],
+          "preview": "Extraction Quality Test V2 - Page 1/5",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 1,
+            "page_kind": "physical_page",
+            "page_label": "1",
+            "reading_order_index": 28,
+            "document_order_index": 28,
+            "source_stream_index": 28,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              221.70469665527344,
+              800.2042236328125,
+              373.5797424316406,
+              819.2122802734375
+            ],
+            "normalized_bbox": [
+              0.37244,
+              0.950486,
+              0.627574,
+              0.973064
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        }
+      ],
+      "warnings": [],
+      "width": 595.2755737304688,
+      "height": 841.8897705078125,
+      "reading_order_quality": "geometric_estimate",
+      "reading_order_region_ids": [
+        "p1:text:1",
+        "p1:text:2",
+        "p1:text:3",
+        "p1:text:4",
+        "p1:text:5",
+        "p1:text:6",
+        "p1:text:7",
+        "p1:text:8",
+        "p1:text:9",
+        "p1:text:10",
+        "p1:text:11",
+        "p1:text:12",
+        "p1:text:13",
+        "p1:text:14",
+        "p1:text:15",
+        "p1:text:16",
+        "p1:text:17",
+        "p1:text:18",
+        "p1:text:19",
+        "p1:text:20",
+        "p1:text:21",
+        "p1:text:22",
+        "p1:text:23",
+        "p1:text:24",
+        "p1:text:25",
+        "p1:text:26",
+        "p1:text:27",
+        "p1:text:28"
+      ]
+    },
+    {
+      "number": 2,
+      "kind": "physical_page",
+      "label": "2",
+      "content_types": [
+        "table",
+        "text"
+      ],
+      "regions": [
+        {
+          "region_id": "p2:text:1",
+          "kind": "text",
+          "bbox": [
+            170.67156982421875,
+            45.354164123535156,
+            547.0875854492188,
+            96.04216003417969
+          ],
+          "preview": "بخاليا مدمجةNative  جدول- V2 اختبار",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 2,
+            "page_kind": "physical_page",
+            "page_label": "2",
+            "reading_order_index": 1,
+            "document_order_index": 29,
+            "source_stream_index": 1,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              170.67156982421875,
+              45.354164123535156,
+              547.0875854492188,
+              96.04216003417969
+            ],
+            "normalized_bbox": [
+              0.28671,
+              0.053872,
+              0.919049,
+              0.114079
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p2:text:2",
+          "kind": "text",
+          "bbox": [
+            218.14788818359375,
+            104.54649353027344,
+            547.0921630859375,
+            126.72249603271484
+          ],
+          "preview": "rowspan / colspan / empty cells : الهدف- Native table - 5  من2 الصفحة",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 2,
+            "page_kind": "physical_page",
+            "page_label": "2",
+            "reading_order_index": 2,
+            "document_order_index": 30,
+            "source_stream_index": 2,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              218.14788818359375,
+              104.54649353027344,
+              547.0921630859375,
+              126.72249603271484
+            ],
+            "normalized_bbox": [
+              0.366465,
+              0.124181,
+              0.919057,
+              0.150521
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p2:text:3",
+          "kind": "text",
+          "bbox": [
+            398.41595458984375,
+            143.7303924560547,
+            547.0855712890625,
+            177.52186584472656
+          ],
+          "preview": "تفاصيل العقود والفواتير",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 2,
+            "page_kind": "physical_page",
+            "page_label": "2",
+            "reading_order_index": 3,
+            "document_order_index": 31,
+            "source_stream_index": 3,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              398.41595458984375,
+              143.7303924560547,
+              547.0855712890625,
+              177.52186584472656
+            ],
+            "normalized_bbox": [
+              0.669297,
+              0.170724,
+              0.919046,
+              0.210861
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p2:table:1",
+          "kind": "table",
+          "bbox": [
+            48.4858512878418,
+            195.65501403808594,
+            546.7968444824219,
+            452.85443115234375
+          ],
+          "preview": "7 rows",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_table",
+          "position": {
+            "page_number": 2,
+            "page_kind": "physical_page",
+            "page_label": "2",
+            "reading_order_index": 4,
+            "document_order_index": 32,
+            "source_stream_index": null,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              48.4858512878418,
+              195.65501403808594,
+              546.7968444824219,
+              452.85443115234375
+            ],
+            "normalized_bbox": [
+              0.081451,
+              0.2324,
+              0.918561,
+              0.537902
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p2:text:4",
+          "kind": "text",
+          "bbox": [
+            388.09686279296875,
+            470.2372741699219,
+            547.08642578125,
+            504.0287780761719
+          ],
+          "preview": "جدول بمجموعات متعددة",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 2,
+            "page_kind": "physical_page",
+            "page_label": "2",
+            "reading_order_index": 5,
+            "document_order_index": 33,
+            "source_stream_index": 14,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              388.09686279296875,
+              470.2372741699219,
+              547.08642578125,
+              504.0287780761719
+            ],
+            "normalized_bbox": [
+              0.651962,
+              0.55855,
+              0.919047,
+              0.598687
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p2:table:2",
+          "kind": "table",
+          "bbox": [
+            48.4858512878418,
+            522.1619873046875,
+            546.7968444824219,
+            705.8757934570312
+          ],
+          "preview": "5 rows",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_table",
+          "position": {
+            "page_number": 2,
+            "page_kind": "physical_page",
+            "page_label": "2",
+            "reading_order_index": 6,
+            "document_order_index": 34,
+            "source_stream_index": null,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              48.4858512878418,
+              522.1619873046875,
+              546.7968444824219,
+              705.8757934570312
+            ],
+            "normalized_bbox": [
+              0.081451,
+              0.620226,
+              0.918561,
+              0.838442
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p2:text:5",
+          "kind": "text",
+          "bbox": [
+            88.24102020263672,
+            729.8564453125,
+            532.166015625,
+            754.1439208984375
+          ],
+          "preview": "المطلوب من النظام: الحفاظ عىل بنية الجداول، تمييز الخاليا الفارغة، وعدم تكرار قيمة الخلية المدمجة",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 2,
+            "page_kind": "physical_page",
+            "page_label": "2",
+            "reading_order_index": 7,
+            "document_order_index": 35,
+            "source_stream_index": 21,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              88.24102020263672,
+              729.8564453125,
+              532.166015625,
+              754.1439208984375
+            ],
+            "normalized_bbox": [
+              0.148236,
+              0.866926,
+              0.893983,
+              0.895775
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p2:text:6",
+          "kind": "text",
+          "bbox": [
+            446.95050048828125,
+            748.8314208984375,
+            532.163818359375,
+            773.118896484375
+          ],
+          "preview": "بشكل يغير المعنى.",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 2,
+            "page_kind": "physical_page",
+            "page_label": "2",
+            "reading_order_index": 8,
+            "document_order_index": 36,
+            "source_stream_index": 22,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              446.95050048828125,
+              748.8314208984375,
+              532.163818359375,
+              773.118896484375
+            ],
+            "normalized_bbox": [
+              0.75083,
+              0.889465,
+              0.893979,
+              0.918314
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p2:text:7",
+          "kind": "text",
+          "bbox": [
+            221.70469665527344,
+            800.2042236328125,
+            373.5797424316406,
+            819.2122802734375
+          ],
+          "preview": "Extraction Quality Test V2 - Page 2/5",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 2,
+            "page_kind": "physical_page",
+            "page_label": "2",
+            "reading_order_index": 9,
+            "document_order_index": 37,
+            "source_stream_index": 23,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              221.70469665527344,
+              800.2042236328125,
+              373.5797424316406,
+              819.2122802734375
+            ],
+            "normalized_bbox": [
+              0.37244,
+              0.950486,
+              0.627574,
+              0.973064
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        }
+      ],
+      "warnings": [],
+      "width": 595.2755737304688,
+      "height": 841.8897705078125,
+      "reading_order_quality": "geometric_estimate",
+      "reading_order_region_ids": [
+        "p2:text:1",
+        "p2:text:2",
+        "p2:text:3",
+        "p2:table:1",
+        "p2:text:4",
+        "p2:table:2",
+        "p2:text:5",
+        "p2:text:6",
+        "p2:text:7"
+      ]
+    },
+    {
+      "number": 3,
+      "kind": "physical_page",
+      "label": "3",
+      "content_types": [
+        "image"
+      ],
+      "regions": [
+        {
+          "region_id": "p3:image:rendered",
+          "kind": "image",
+          "bbox": [
+            0.0,
+            0.0,
+            595.2755737304688,
+            841.8897705078125
+          ],
+          "preview": null,
+          "image_role": "rendered_page",
+          "content_hint": null,
+          "source_surface": "pdf_page_render",
+          "position": {
+            "page_number": 3,
+            "page_kind": "physical_page",
+            "page_label": "3",
+            "reading_order_index": 1,
+            "document_order_index": 38,
+            "source_stream_index": null,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              0.0,
+              0.0,
+              595.2755737304688,
+              841.8897705078125
+            ],
+            "normalized_bbox": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        }
+      ],
+      "warnings": [
+        "page_has_no_native_regions"
+      ],
+      "width": 595.2755737304688,
+      "height": 841.8897705078125,
+      "reading_order_quality": "geometric_estimate",
+      "reading_order_region_ids": [
+        "p3:image:rendered"
+      ]
+    },
+    {
+      "number": 4,
+      "kind": "physical_page",
+      "label": "4",
+      "content_types": [
+        "image"
+      ],
+      "regions": [
+        {
+          "region_id": "p4:image:rendered",
+          "kind": "image",
+          "bbox": [
+            0.0,
+            0.0,
+            595.2755737304688,
+            841.8897705078125
+          ],
+          "preview": null,
+          "image_role": "rendered_page",
+          "content_hint": null,
+          "source_surface": "pdf_page_render",
+          "position": {
+            "page_number": 4,
+            "page_kind": "physical_page",
+            "page_label": "4",
+            "reading_order_index": 1,
+            "document_order_index": 39,
+            "source_stream_index": null,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              0.0,
+              0.0,
+              595.2755737304688,
+              841.8897705078125
+            ],
+            "normalized_bbox": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        }
+      ],
+      "warnings": [
+        "page_has_no_native_regions"
+      ],
+      "width": 595.2755737304688,
+      "height": 841.8897705078125,
+      "reading_order_quality": "geometric_estimate",
+      "reading_order_region_ids": [
+        "p4:image:rendered"
+      ]
+    },
+    {
+      "number": 5,
+      "kind": "physical_page",
+      "label": "5",
+      "content_types": [
+        "image",
+        "text"
+      ],
+      "regions": [
+        {
+          "region_id": "p5:text:1",
+          "kind": "text",
+          "bbox": [
+            291.12786865234375,
+            45.354164123535156,
+            547.0879516601562,
+            96.04216003417969
+          ],
+          "preview": "Hybrid  صفحة- V2 اختبار",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 1,
+            "document_order_index": 40,
+            "source_stream_index": 1,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              291.12786865234375,
+              45.354164123535156,
+              547.0879516601562,
+              96.04216003417969
+            ],
+            "normalized_bbox": [
+              0.489064,
+              0.053872,
+              0.91905,
+              0.114079
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:2",
+          "kind": "text",
+          "bbox": [
+            256.83001708984375,
+            104.54649353027344,
+            547.1026611328125,
+            126.72249603271484
+          ],
+          "preview": "Raster  والجدول السفلي صورةNative  النص العلوي- 5  من5 الصفحة",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 2,
+            "document_order_index": 41,
+            "source_stream_index": 2,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              256.83001708984375,
+              104.54649353027344,
+              547.1026611328125,
+              126.72249603271484
+            ],
+            "normalized_bbox": [
+              0.431447,
+              0.124181,
+              0.919075,
+              0.150521
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:3",
+          "kind": "text",
+          "bbox": [
+            370.253662109375,
+            157.0703125,
+            532.7601318359375,
+            183.25889587402344
+          ],
+          "preview": ":رقم الملفHYB-2026-99118",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 3,
+            "document_order_index": 42,
+            "source_stream_index": 3,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              370.253662109375,
+              157.0703125,
+              532.7601318359375,
+              183.25889587402344
+            ],
+            "normalized_bbox": [
+              0.621987,
+              0.186569,
+              0.894981,
+              0.217676
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:4",
+          "kind": "text",
+          "bbox": [
+            401.5097351074219,
+            178.7703094482422,
+            532.7485961914062,
+            204.95889282226562
+          ],
+          "preview": ":تاريخ اإلنشاء22/08/2026",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 4,
+            "document_order_index": 43,
+            "source_stream_index": 4,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              401.5097351074219,
+              178.7703094482422,
+              532.7485961914062,
+              204.95889282226562
+            ],
+            "normalized_bbox": [
+              0.674494,
+              0.212344,
+              0.894961,
+              0.243451
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:5",
+          "kind": "text",
+          "bbox": [
+            334.581787109375,
+            200.8196563720703,
+            532.7483520507812,
+            227.00823974609375
+          ],
+          "preview": ":البريدhybrid@test-company.com",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 5,
+            "document_order_index": 44,
+            "source_stream_index": 5,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              334.581787109375,
+              200.8196563720703,
+              532.7483520507812,
+              227.00823974609375
+            ],
+            "normalized_bbox": [
+              0.562062,
+              0.238534,
+              0.894961,
+              0.269641
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:6",
+          "kind": "text",
+          "bbox": [
+            61.88938903808594,
+            222.51966857910156,
+            532.7484741210938,
+            248.708251953125
+          ],
+          "preview": ":مالحظة\n إذاOCR  يجب استخراج هذا الجزء من طبقة النص األصلية، وعدم إرسال الصفحة كاملة إىل",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 6,
+            "document_order_index": 45,
+            "source_stream_index": 6,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              61.88938903808594,
+              222.51966857910156,
+              532.7484741210938,
+              248.708251953125
+            ],
+            "normalized_bbox": [
+              0.103968,
+              0.26431,
+              0.894961,
+              0.295417
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:7",
+          "kind": "text",
+          "bbox": [
+            275.1376953125,
+            244.2196807861328,
+            532.745849609375,
+            270.40826416015625
+          ],
+          "preview": "عىل المناطق غير المغطاة فقط.OCR كان النظام يدعم",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 7,
+            "document_order_index": 46,
+            "source_stream_index": 7,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              275.1376953125,
+              244.2196807861328,
+              532.745849609375,
+              270.40826416015625
+            ],
+            "normalized_bbox": [
+              0.462202,
+              0.290085,
+              0.894957,
+              0.321192
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:8",
+          "kind": "text",
+          "bbox": [
+            415.67840576171875,
+            300.40625,
+            547.1002197265625,
+            334.19775390625
+          ],
+          "preview": "جدول مرفقات مصور",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 8,
+            "document_order_index": 47,
+            "source_stream_index": 8,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              415.67840576171875,
+              300.40625,
+              547.1002197265625,
+              334.19775390625
+            ],
+            "normalized_bbox": [
+              0.698296,
+              0.356824,
+              0.919071,
+              0.396961
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:9",
+          "kind": "text",
+          "bbox": [
+            191.75213623046875,
+            348.6438293457031,
+            547.1056518554688,
+            369.3410339355469
+          ],
+          "preview": ".. يحتوي خاليا فارغة وأكوادًا حساسة للتشابه البصريText Layer الجدول التالي صورة وليس له",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 9,
+            "document_order_index": 48,
+            "source_stream_index": 9,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              191.75213623046875,
+              348.6438293457031,
+              547.1056518554688,
+              369.3410339355469
+            ],
+            "normalized_bbox": [
+              0.322123,
+              0.414121,
+              0.91908,
+              0.438705
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:image:1",
+          "kind": "image",
+          "bbox": [
+            48.9389762878418,
+            382.49053955078125,
+            546.3366088867188,
+            636.3348388671875
+          ],
+          "preview": null,
+          "image_role": "raster_grid_table",
+          "content_hint": "table",
+          "source_surface": "pdf_embedded_image",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 10,
+            "document_order_index": 49,
+            "source_stream_index": 10,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              48.9389762878418,
+              382.49053955078125,
+              546.3366088867188,
+              636.3348388671875
+            ],
+            "normalized_bbox": [
+              0.082212,
+              0.454324,
+              0.917788,
+              0.755841
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:10",
+          "kind": "text",
+          "bbox": [
+            66.27861785888672,
+            660.6904907226562,
+            532.168212890625,
+            684.9779663085938
+          ],
+          "preview": "anchors  مستقل معOCR ، والجدول المصور يمر عبرauthoritative  يبقىNative text :سيناريو النجاح",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 11,
+            "document_order_index": 50,
+            "source_stream_index": 11,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              66.27861785888672,
+              660.6904907226562,
+              532.168212890625,
+              684.9779663085938
+            ],
+            "normalized_bbox": [
+              0.111341,
+              0.784771,
+              0.893986,
+              0.81362
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:11",
+          "kind": "text",
+          "bbox": [
+            242.99078369140625,
+            679.66552734375,
+            532.1749877929688,
+            703.9530029296875
+          ],
+          "preview": "تشير إىل منطقة الصورة، ثم تطبق مراجعة عىل األكواد عند الحاجة.",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 12,
+            "document_order_index": 51,
+            "source_stream_index": 12,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              242.99078369140625,
+              679.66552734375,
+              532.1749877929688,
+              703.9530029296875
+            ],
+            "normalized_bbox": [
+              0.408199,
+              0.807309,
+              0.893998,
+              0.836158
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        },
+        {
+          "region_id": "p5:text:12",
+          "kind": "text",
+          "bbox": [
+            221.70469665527344,
+            800.2042236328125,
+            373.5797424316406,
+            819.2122802734375
+          ],
+          "preview": "Extraction Quality Test V2 - Page 5/5",
+          "image_role": null,
+          "content_hint": null,
+          "source_surface": "native_pdf_text",
+          "position": {
+            "page_number": 5,
+            "page_kind": "physical_page",
+            "page_label": "5",
+            "reading_order_index": 13,
+            "document_order_index": 52,
+            "source_stream_index": 13,
+            "reading_order_quality": "geometric_estimate",
+            "coordinate_system": "pdf_points_top_left",
+            "bbox": [
+              221.70469665527344,
+              800.2042236328125,
+              373.5797424316406,
+              819.2122802734375
+            ],
+            "normalized_bbox": [
+              0.37244,
+              0.950486,
+              0.627574,
+              0.973064
+            ]
+          },
+          "relations": {
+            "overlaps_region_ids": [],
+            "has_native_text_overlap": false,
+            "region_role": "primary",
+            "parent_region_id": null
+          }
+        }
+      ],
+      "warnings": [],
+      "width": 595.2755737304688,
+      "height": 841.8897705078125,
+      "reading_order_quality": "geometric_estimate",
+      "reading_order_region_ids": [
+        "p5:text:1",
+        "p5:text:2",
+        "p5:text:3",
+        "p5:text:4",
+        "p5:text:5",
+        "p5:text:6",
+        "p5:text:7",
+        "p5:text:8",
+        "p5:text:9",
+        "p5:image:1",
+        "p5:text:10",
+        "p5:text:11",
+        "p5:text:12"
+      ]
+    }
+  ],
+  "warnings": [],
+  "schema_version": "extraction.v0.3",
+  "document_order_region_ids": [
+    "p1:text:1",
+    "p1:text:2",
+    "p1:text:3",
+    "p1:text:4",
+    "p1:text:5",
+    "p1:text:6",
+    "p1:text:7",
+    "p1:text:8",
+    "p1:text:9",
+    "p1:text:10",
+    "p1:text:11",
+    "p1:text:12",
+    "p1:text:13",
+    "p1:text:14",
+    "p1:text:15",
+    "p1:text:16",
+    "p1:text:17",
+    "p1:text:18",
+    "p1:text:19",
+    "p1:text:20",
+    "p1:text:21",
+    "p1:text:22",
+    "p1:text:23",
+    "p1:text:24",
+    "p1:text:25",
+    "p1:text:26",
+    "p1:text:27",
+    "p1:text:28",
+    "p2:text:1",
+    "p2:text:2",
+    "p2:text:3",
+    "p2:table:1",
+    "p2:text:4",
+    "p2:table:2",
+    "p2:text:5",
+    "p2:text:6",
+    "p2:text:7",
+    "p3:image:rendered",
+    "p4:image:rendered",
+    "p5:text:1",
+    "p5:text:2",
+    "p5:text:3",
+    "p5:text:4",
+    "p5:text:5",
+    "p5:text:6",
+    "p5:text:7",
+    "p5:text:8",
+    "p5:text:9",
+    "p5:image:1",
+    "p5:text:10",
+    "p5:text:11",
+    "p5:text:12"
+  ]
+}

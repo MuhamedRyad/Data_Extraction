@@ -1,0 +1,89 @@
+{
+  "file": "extraction_quality_test_v2_5pages.pdf",
+  "schema_version": "extraction.v0.5",
+  "page_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "pages": [
+    {
+      "number": 1,
+      "regions": 28,
+      "kinds": {
+        "text": 28
+      },
+      "methods": {
+        "native": 28
+      },
+      "order_quality": "geometric_estimate",
+      "warnings": [],
+      "requires_review": false
+    },
+    {
+      "number": 2,
+      "regions": 9,
+      "kinds": {
+        "text": 7,
+        "table": 2
+      },
+      "methods": {
+        "native": 9
+      },
+      "order_quality": "geometric_estimate",
+      "warnings": [],
+      "requires_review": false
+    },
+    {
+      "number": 3,
+      "regions": 1,
+      "kinds": {
+        "text": 1
+      },
+      "methods": {
+        "ocr": 1
+      },
+      "order_quality": "geometric_estimate",
+      "warnings": [
+        "page_has_no_native_regions"
+      ],
+      "requires_review": true
+    },
+    {
+      "number": 4,
+      "regions": 1,
+      "kinds": {
+        "text": 1
+      },
+      "methods": {
+        "ocr": 1
+      },
+      "order_quality": "geometric_estimate",
+      "warnings": [
+        "page_has_no_native_regions"
+      ],
+      "requires_review": true
+    },
+    {
+      "number": 5,
+      "regions": 13,
+      "kinds": {
+        "text": 13
+      },
+      "methods": {
+        "native": 12,
+        "ocr": 1
+      },
+      "order_quality": "geometric_estimate",
+      "warnings": [],
+      "requires_review": true
+    }
+  ],
+  "total_regions": 52,
+  "ready_for_publication": false,
+  "all_ids_unique": true,
+  "manifest_order_matches": true,
+  "vision_calls": 0
+}

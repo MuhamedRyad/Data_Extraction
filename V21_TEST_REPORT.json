@@ -1,0 +1,41 @@
+{
+  "version": "0.21.0",
+  "feature": "adaptive_template_routing",
+  "result": "passed",
+  "total_tests": 367,
+  "groups": [
+    {
+      "name": "feature_and_regression",
+      "tests": 126,
+      "status": "passed"
+    },
+    {
+      "name": "legacy_and_v04_to_v12",
+      "tests": 186,
+      "status": "passed"
+    },
+    {
+      "name": "v13_to_v21",
+      "tests": 55,
+      "status": "passed"
+    }
+  ],
+  "new_v21_tests": 4,
+  "compileall": "passed",
+  "routes_tested": [
+    "deterministic_review",
+    "deterministic_refine_review",
+    "ai_generate_review"
+  ],
+  "semantic_repair_test": {
+    "scenario": "reviewer detects TOTAL mapped to Subtotal region",
+    "full_generation_calls": 0,
+    "refinement_calls": 1,
+    "reviewer_calls": 2,
+    "final_verdict": "pass"
+  },
+  "wheel_build": "passed",
+  "clean_install": "passed",
+  "clean_wheel_smoke": "passed",
+  "wheel_smoke_route": "deterministic_refine_review"
+}

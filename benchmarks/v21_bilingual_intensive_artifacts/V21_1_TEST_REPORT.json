@@ -1,0 +1,38 @@
+{
+  "version": "0.21.1",
+  "feature": "bilingual_adaptive_hardening",
+  "result": "passed",
+  "regression": {
+    "collected": 371,
+    "passed": 371,
+    "compileall": "passed"
+  },
+  "routing_stress": {
+    "passed": 90,
+    "total": 90
+  },
+  "ocr_matrix_documents": 24,
+  "e2e_languages": [
+    "en",
+    "ar",
+    "mixed"
+  ],
+  "packaging": {
+    "wheel_build": "passed",
+    "clean_install": "passed",
+    "clean_wheel_smoke": {
+      "status": "passed",
+      "route": "deterministic_refine_review",
+      "full_generate_calls": 0,
+      "refine_calls": 1,
+      "review_calls": 1
+    },
+    "compileall": "passed"
+  },
+  "limits": [
+    "No live external AI model was called in the bilingual E2E benchmark.",
+    "Tesseract 5.5.0 ara+eng was used for real OCR tests.",
+    "The controlled OCR matrix is synthetic; the existing real Arabic invoice smoke remains materially harder.",
+    "Single crop OCR provider means E2E values remain review_required rather than independent verified consensus."
+  ]
+}

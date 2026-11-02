@@ -1,0 +1,179 @@
+{
+  "source_name": "extraction_quality_test_v2_5pages.pdf",
+  "schema_version": "extraction.v0.6",
+  "page_count": 5,
+  "region_count": 52,
+  "pages": [
+    {
+      "page_number": 1,
+      "region_count": 28,
+      "content_types": [
+        "text"
+      ],
+      "methods": {
+        "native": 28,
+        "ocr": 0,
+        "vision_model": 0,
+        "unresolved": 0,
+        "document_ai": 0
+      },
+      "requires_review": false,
+      "reading_order_region_ids": [
+        "p1:text:1",
+        "p1:text:2",
+        "p1:text:3",
+        "p1:text:4",
+        "p1:text:5",
+        "p1:text:6",
+        "p1:text:7",
+        "p1:text:8",
+        "p1:text:9",
+        "p1:text:10",
+        "p1:text:11",
+        "p1:text:12",
+        "p1:text:13",
+        "p1:text:14",
+        "p1:text:15",
+        "p1:text:16",
+        "p1:text:17",
+        "p1:text:18",
+        "p1:text:19",
+        "p1:text:20",
+        "p1:text:21",
+        "p1:text:22",
+        "p1:text:23",
+        "p1:text:24",
+        "p1:text:25",
+        "p1:text:26",
+        "p1:text:27",
+        "p1:text:28"
+      ],
+      "warnings": []
+    },
+    {
+      "page_number": 2,
+      "region_count": 9,
+      "content_types": [
+        "table",
+        "text"
+      ],
+      "methods": {
+        "native": 9,
+        "ocr": 0,
+        "vision_model": 0,
+        "unresolved": 0,
+        "document_ai": 0
+      },
+      "requires_review": false,
+      "reading_order_region_ids": [
+        "p2:text:1",
+        "p2:text:2",
+        "p2:text:3",
+        "p2:table:1",
+        "p2:text:4",
+        "p2:table:2",
+        "p2:text:5",
+        "p2:text:6",
+        "p2:text:7"
+      ],
+      "warnings": []
+    },
+    {
+      "page_number": 3,
+      "region_count": 1,
+      "content_types": [
+        "text"
+      ],
+      "methods": {
+        "native": 0,
+        "ocr": 1,
+        "vision_model": 0,
+        "unresolved": 0,
+        "document_ai": 0
+      },
+      "requires_review": true,
+      "reading_order_region_ids": [
+        "p3:image:rendered"
+      ],
+      "warnings": [
+        "page_has_no_native_regions"
+      ]
+    },
+    {
+      "page_number": 4,
+      "region_count": 1,
+      "content_types": [
+        "text"
+      ],
+      "methods": {
+        "native": 0,
+        "ocr": 1,
+        "vision_model": 0,
+        "unresolved": 0,
+        "document_ai": 0
+      },
+      "requires_review": true,
+      "reading_order_region_ids": [
+        "p4:image:rendered"
+      ],
+      "warnings": [
+        "page_has_no_native_regions"
+      ]
+    },
+    {
+      "page_number": 5,
+      "region_count": 13,
+      "content_types": [
+        "text"
+      ],
+      "methods": {
+        "native": 12,
+        "ocr": 1,
+        "vision_model": 0,
+        "unresolved": 0,
+        "document_ai": 0
+      },
+      "requires_review": true,
+      "reading_order_region_ids": [
+        "p5:text:1",
+        "p5:text:2",
+        "p5:text:3",
+        "p5:text:4",
+        "p5:text:5",
+        "p5:text:6",
+        "p5:text:7",
+        "p5:text:8",
+        "p5:text:9",
+        "p5:image:1",
+        "p5:text:10",
+        "p5:text:11",
+        "p5:text:12"
+      ],
+      "warnings": []
+    }
+  ],
+  "inspect_page_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "extraction_page_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "inspection_order_matches_extraction": true,
+  "unique_region_ids": true,
+  "ready_for_publication": false,
+  "structure_provider_invocations": 0,
+  "diagnostics": [
+    "p3:image:rendered: numeric_content_requires_review",
+    "p4:image:rendered: numeric_content_requires_review",
+    "p5:image:1: raster_table_structure_not_reconstructed, numeric_content_requires_review"
+  ],
+  "note": "Native+Tesseract run. No Docling/Unstructured model inference in this run."
+}

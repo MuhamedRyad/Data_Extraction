@@ -1,0 +1,25 @@
+{
+  "version": "0.16.0",
+  "status": "passed",
+  "collected_tests": 343,
+  "passed_tests": 343,
+  "new_v16_tests": 5,
+  "single_process_full_run": "timed_out_without_observed_failure; complete suite rerun in non-overlapping groups",
+  "groups": [
+    {"name": "legacy_top_level_group_1", "passed": 131},
+    {"name": "v07_v11", "passed": 29},
+    {"name": "v12_v16", "passed": 36},
+    {"name": "regression_and_v08", "passed": 120},
+    {"name": "feature_package_tests", "passed": 27}
+  ],
+  "compileall": "passed",
+  "wheel_build": "passed",
+  "clean_install": "passed",
+  "clean_wheel_ai_template_smoke": "passed",
+  "live_openai_api_call": "not_run_no_api_key",
+  "notes": [
+    "OpenAI Responses adapter was tested through a mocked HTTP response using the same strict structured-output parser and request body.",
+    "The smoke test used the NOVA first/repeated invoice image pair from the v0.15 real invoice benchmark.",
+    "Repeated extraction matched 5/5 expected fields and used no generic extraction after template approval."
+  ]
+}

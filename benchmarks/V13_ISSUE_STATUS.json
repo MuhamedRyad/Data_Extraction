@@ -1,0 +1,29 @@
+{
+  "false_semantic_complete_from_any_ocr_text": {
+    "status": "fixed",
+    "evidence": "tests/test_v13_structured_reliability.py"
+  },
+  "high_confidence_missing_fields": {
+    "status": "fixed_as_reliability_signal",
+    "note": "confidence no longer proves semantic completeness"
+  },
+  "flat_receipt_invoice_output": {
+    "status": "improved",
+    "note": "structured field candidates plus optional token-geometry table recovery"
+  },
+  "ocr_character_accuracy": {
+    "status": "not_claimed_fixed",
+    "note": "requires rerun on exact SROIE/ZATCA originals"
+  },
+  "financial_field_verification": {
+    "status": "fail_closed",
+    "note": "single raster OCR observation remains unverified"
+  },
+  "toc_false_positive_statistics_table": {
+    "status": "regression_added"
+  },
+  "forms_key_value_relationships": {
+    "status": "partial",
+    "note": "flat OCR form remains semantic incomplete unless structure is recovered"
+  }
+}

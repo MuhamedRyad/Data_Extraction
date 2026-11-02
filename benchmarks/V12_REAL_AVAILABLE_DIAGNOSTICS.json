@@ -1,0 +1,201 @@
+[
+  {
+    "file": "shnayer_first5.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "reading_order_quality": "geometric_estimate",
+        "semantic_warnings": [
+          "page_semantic_simple_prose"
+        ],
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "page_semantic_simple_prose",
+          "pdf_page_furniture_inferred_review",
+          "pdf_heading_inferred_review"
+        ]
+      },
+      {
+        "page": 2,
+        "reading_order_quality": "geometric_estimate",
+        "semantic_warnings": [
+          "page_semantic_simple_prose"
+        ],
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "vector_graphics_detected_review",
+          "page_semantic_simple_prose",
+          "pdf_page_furniture_inferred_review",
+          "pdf_heading_inferred_review",
+          "pdf_repeated_navigation_inferred_review"
+        ]
+      },
+      {
+        "page": 3,
+        "reading_order_quality": "geometric_estimate",
+        "semantic_warnings": [
+          "page_semantic_simple_prose"
+        ],
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "page_semantic_simple_prose",
+          "pdf_page_furniture_inferred_review",
+          "pdf_heading_inferred_review",
+          "pdf_repeated_navigation_inferred_review"
+        ]
+      },
+      {
+        "page": 4,
+        "reading_order_quality": "geometric_estimate",
+        "semantic_warnings": [
+          "page_semantic_table_heavy"
+        ],
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "page_semantic_table_heavy",
+          "pdf_page_furniture_inferred_review",
+          "pdf_heading_inferred_review",
+          "pdf_repeated_navigation_inferred_review"
+        ]
+      },
+      {
+        "page": 5,
+        "reading_order_quality": "ambiguous_overlap",
+        "semantic_warnings": [
+          "page_semantic_mixed_layout"
+        ],
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "vector_graphics_detected_review",
+          "page_semantic_mixed_layout",
+          "pdf_page_furniture_inferred_review",
+          "pdf_heading_inferred_review",
+          "pdf_repeated_navigation_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "Copy of هيكل الوزارة الجديد مدير عام الهيكل كامل بالادارات دلال (2).pdf",
+    "pages": [
+      {
+        "page": 1,
+        "reading_order_quality": "ambiguous_overlap",
+        "semantic_warnings": [
+          "page_semantic_diagram_hierarchy"
+        ],
+        "warnings": [
+          "vector_graphics_detected_review",
+          "reading_order_diagram_hierarchy_review_required",
+          "page_semantic_diagram_hierarchy",
+          "pdf_page_furniture_inferred_review",
+          "pdf_heading_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "MOCI-2025.7_v1-DG-F.1.3-Prod-Website Accessibility Report-2.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "reading_order_quality": "geometric_estimate",
+        "semantic_warnings": [
+          "page_semantic_simple_prose"
+        ],
+        "warnings": [
+          "page_semantic_simple_prose",
+          "pdf_page_furniture_inferred_review",
+          "pdf_heading_inferred_review"
+        ]
+      },
+      {
+        "page": 2,
+        "reading_order_quality": "ambiguous_overlap",
+        "semantic_warnings": [
+          "page_semantic_mixed_layout"
+        ],
+        "warnings": [
+          "page_semantic_mixed_layout",
+          "pdf_page_furniture_inferred_review",
+          "pdf_heading_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 3,
+        "reading_order_quality": "ambiguous_overlap",
+        "semantic_warnings": [
+          "page_semantic_table_heavy"
+        ],
+        "warnings": [
+          "page_semantic_table_heavy",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 4,
+        "reading_order_quality": "ambiguous_overlap",
+        "semantic_warnings": [
+          "page_semantic_table_heavy"
+        ],
+        "warnings": [
+          "page_semantic_table_heavy",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 5,
+        "reading_order_quality": "ambiguous_overlap",
+        "semantic_warnings": [
+          "page_semantic_table_heavy"
+        ],
+        "warnings": [
+          "page_semantic_table_heavy",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 6,
+        "reading_order_quality": "ambiguous_overlap",
+        "semantic_warnings": [
+          "page_semantic_table_heavy"
+        ],
+        "warnings": [
+          "page_semantic_table_heavy",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 7,
+        "reading_order_quality": "ambiguous_overlap",
+        "semantic_warnings": [
+          "page_semantic_table_heavy"
+        ],
+        "warnings": [
+          "page_semantic_table_heavy",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 8,
+        "reading_order_quality": "ambiguous_overlap",
+        "semantic_warnings": [
+          "page_semantic_table_heavy"
+        ],
+        "warnings": [
+          "page_semantic_table_heavy",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      }
+    ]
+  }
+]

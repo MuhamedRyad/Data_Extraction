@@ -1,0 +1,42 @@
+{
+  "version": "0.23.0",
+  "slow_ocr": {
+    "pages": 8,
+    "max_parallel_ocr_calls": 2,
+    "sequential_seconds": 0.7766487090002556,
+    "parallel_seconds": 0.5200370469992777,
+    "speedup": 1.4934488100062886,
+    "parallel_max_active": 2,
+    "same_output": true,
+    "same_document_order": true
+  },
+  "real_tesseract": {
+    "pages": 6,
+    "max_parallel_ocr_calls": 2,
+    "sequential_seconds": 2.4761463610002465,
+    "parallel_seconds": 1.7085903449997204,
+    "speedup": 1.4492334972199856,
+    "same_output": true,
+    "same_document_order": true
+  },
+  "mock_ai_batches": {
+    "pages": 12,
+    "pages_per_batch": 3,
+    "batches": 4,
+    "max_parallel_ai_batches": 2,
+    "sequential_seconds": 0.695890947999942,
+    "parallel_seconds": 0.40450603400040563,
+    "speedup": 1.7203475090787994,
+    "sequential_calls": 4,
+    "parallel_calls": 4,
+    "sequential_max_active": 1,
+    "parallel_max_active": 2,
+    "same_batch_merge_order": true,
+    "batch_merge_order": [
+      "batch:1,2,3",
+      "batch:4,5,6",
+      "batch:7,8,9",
+      "batch:10,11,12"
+    ]
+  }
+}

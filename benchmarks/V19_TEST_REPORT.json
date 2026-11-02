@@ -1,0 +1,194 @@
+{
+  "version": "0.19.0",
+  "feature": "template_aware_repeating_tables",
+  "unit_regression": {
+    "collected": 357,
+    "passed": 357,
+    "execution": "split_groups",
+    "compileall": "passed"
+  },
+  "real_tesseract_benchmark": {
+    "version": "0.19.0",
+    "scenario": "same_v18_invoice_table_regression",
+    "build_diagnostics": [
+      "template_generated_by_ai_provider_requires_approval",
+      "assistant_ai_v19_table_geometry"
+    ],
+    "match_score": 1.0,
+    "match_status": "accepted",
+    "drift_detected": false,
+    "generic_extraction_performed": false,
+    "fields": {
+      "invoice_number": "INV-2026-102",
+      "date": "02/11/2026",
+      "subtotal": "113.50",
+      "tax": "5.68",
+      "total": "119.18"
+    },
+    "field_exact": {
+      "invoice_number": true,
+      "date": true,
+      "subtotal": true,
+      "tax": true,
+      "total": true
+    },
+    "field_exact_count": 5,
+    "table": {
+      "status": "template_structure_review",
+      "verified": false,
+      "rows": [
+        [
+          "Blue Pen",
+          "2",
+          "12.50",
+          "25.00"
+        ],
+        [
+          "Notebook Pack",
+          "1",
+          "40.00",
+          "40.00"
+        ],
+        [
+          "Desk Lamp",
+          "1",
+          "48.50",
+          "48.50"
+        ]
+      ],
+      "expected_rows": [
+        [
+          "Blue Pen",
+          "2",
+          "12.50",
+          "25.00"
+        ],
+        [
+          "Notebook Pack",
+          "1",
+          "40.00",
+          "40.00"
+        ],
+        [
+          "Desk Lamp",
+          "1",
+          "48.50",
+          "48.50"
+        ]
+      ],
+      "exact": true,
+      "summary_rows_leaked": false,
+      "review_reasons": [
+        "template_table_column_geometry_applied",
+        "template_table_cell_fallback:Qty",
+        "template_table_values_require_independent_verification"
+      ]
+    },
+    "semantic_complete": false,
+    "requires_review": true,
+    "diagnostics": [
+      "template_preflight_match",
+      "template_required_fields_not_verified",
+      "template_required_table_values_not_verified",
+      "template_fast_path_used",
+      "template_table_fast_path_used"
+    ],
+    "notes": [
+      "Real local Tesseract is used for field crops, table tokens, and missing Qty cell fallback.",
+      "One OCR engine is configured, so financial table values intentionally remain review-required rather than verified consensus.",
+      "The table template was authored as the AI proposal: body bbox + per-column x ranges + stop anchors."
+    ]
+  },
+  "before_after": {
+    "v18": {
+      "generic_extraction_performed": true,
+      "match_score": 0.8,
+      "match_status": "review_required",
+      "rows": [
+        [
+          "Blue Pen 2 12.50",
+          "25.00"
+        ],
+        [
+          "Notebook Pack 1 40.00",
+          "40.00"
+        ],
+        [
+          "Desk Lamp 1 48.50",
+          "48.50"
+        ],
+        [
+          "Subtotal",
+          "113.50"
+        ],
+        [
+          "VAT",
+          "5.68"
+        ],
+        [
+          "TOTAL",
+          "119.18"
+        ]
+      ]
+    },
+    "v19": {
+      "generic_extraction_performed": false,
+      "match_score": 1.0,
+      "match_status": "accepted",
+      "rows": [
+        [
+          "Blue Pen",
+          "2",
+          "12.50",
+          "25.00"
+        ],
+        [
+          "Notebook Pack",
+          "1",
+          "40.00",
+          "40.00"
+        ],
+        [
+          "Desk Lamp",
+          "1",
+          "48.50",
+          "48.50"
+        ]
+      ],
+      "exact": true,
+      "summary_rows_leaked": false
+    }
+  },
+  "wheel_build": "passed",
+  "clean_install": "passed",
+  "wheel_smoke": {
+    "installed_module_path": "/mnt/data/v19_clean_install/data_extraction/__init__.py",
+    "wheel_version": "0.19.0",
+    "match_score": 1.0,
+    "match_status": "accepted",
+    "generic_extraction_performed": false,
+    "field_exact_count": 5,
+    "table_exact": true,
+    "summary_rows_leaked": false,
+    "table_rows": [
+      [
+        "Blue Pen",
+        "2",
+        "12.50",
+        "25.00"
+      ],
+      [
+        "Notebook Pack",
+        "1",
+        "40.00",
+        "40.00"
+      ],
+      [
+        "Desk Lamp",
+        "1",
+        "48.50",
+        "48.50"
+      ]
+    ]
+  }
+}

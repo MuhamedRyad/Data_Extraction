@@ -1,0 +1,25 @@
+{
+  "version": "0.11.0",
+  "date": "2026-10-31",
+  "tests_passed": 307,
+  "tests_failed": 0,
+  "new_v11_tests": 5,
+  "public_schema": "extraction.v0.6",
+  "synthetic_deterministic_exact": "4/4",
+  "synthetic_deterministic_pairwise_average": 1.0,
+  "complex_figure_pairwise_accuracy": 0.8571,
+  "complex_figure_safe_abstention": "reading_order_complex_columns_review_required",
+  "real_arabic_first5_ambiguous_v010": 5,
+  "real_arabic_first5_ambiguous_v011": 1,
+  "org_chart_v011_semantic_warning": "page_semantic_diagram_hierarchy",
+  "external_model_benchmark_status": "Surya/LayoutReader/PP-StructureV3 unavailable in runtime; not scored",
+  "notes": [
+    "Physical overlap evidence is preserved even when support/background layers are excluded from linear reading-flow ambiguity.",
+    "Geometric estimate is not a claim of human-verified reading order.",
+    "Layout provider selective fallback is opt-in for backward compatibility."
+  ],
+  "wheel_built": true,
+  "wheel_smoke_test": true,
+  "wheel_sha256": "4ac8220ddf26c1e8a14c7fa48d0c1853bc2385071a4cbb6adde4a0a3cf576665",
+  "compileall_passed": true
+}

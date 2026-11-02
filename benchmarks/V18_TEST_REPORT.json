@@ -1,0 +1,18 @@
+{
+  "version": "0.18.0",
+  "result": "passed",
+  "total_tests": 354,
+  "groups": [
+    {"name": "internal_feature_tests", "tests": 27, "status": "passed"},
+    {"name": "public_regression_group_1", "tests": 174, "status": "passed"},
+    {"name": "public_regression_group_2", "tests": 90, "status": "passed"},
+    {"name": "public_regression_group_3", "tests": 63, "status": "passed"}
+  ],
+  "new_v18_tests": 5,
+  "compileall": "passed",
+  "notes": [
+    "Regression was run in bounded groups to avoid single-process timeout.",
+    "v0.18 refinement is bounded and geometry-only.",
+    "OpenAI refinement API path was tested with Mock HTTP; no live API key was used."
+  ]
+}

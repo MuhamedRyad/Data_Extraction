@@ -1,0 +1,56 @@
+[
+  {
+    "issue": 1,
+    "name": "toc_title_page_binding",
+    "priority": "high",
+    "status": "implemented_and_synthetic_regression_passed",
+    "real_original_retest": "pending_exact_consumer_rights_pdf"
+  },
+  {
+    "issue": 2,
+    "name": "low_confidence_image_ocr",
+    "priority": "medium_high",
+    "status": "recovery_path_implemented_review_only",
+    "real_original_retest": "pending_exact_ministry_guide_pdf"
+  },
+  {
+    "issue": 3,
+    "name": "raster_table_structure",
+    "priority": "medium_high",
+    "status": "token_geometry_candidate_reconstruction_implemented",
+    "real_original_retest": "pending_representative_image_table"
+  },
+  {
+    "issue": 4,
+    "name": "mixed_arabic_numbers_direction",
+    "priority": "medium",
+    "status": "binding_improved_not_fully_solved",
+    "note": "general mixed bidi text remains evidence/review rather than silent rewrite"
+  },
+  {
+    "issue": 5,
+    "name": "toc_page_classification",
+    "priority": "medium",
+    "status": "implemented_table_of_contents_semantic_class",
+    "real_original_retest": "pending_exact_consumer_rights_pdf"
+  },
+  {
+    "issue": 6,
+    "name": "unresolved_count_impact",
+    "priority": "low",
+    "status": "implemented_critical_noncritical_breakdown"
+  },
+  {
+    "issue": 7,
+    "name": "complex_figure_columns_0_8571",
+    "category": "validation_limit",
+    "status": "unchanged_known_limit"
+  },
+  {
+    "issue": 8,
+    "name": "comparison_source_validation",
+    "category": "validation_limit",
+    "status": "partially_resolved",
+    "note": "shnayer 5/5 tied to original; external model comparison and two local PDFs remain unavailable"
+  }
+]

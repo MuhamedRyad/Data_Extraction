@@ -1,0 +1,12 @@
+{
+  "v13_real_world_findings": {
+    "semantic_false_positive_from_ocr_text": "fixed in v0.13 and retained",
+    "low_confidence_form_escapes_semantic_gate": "fixed in v0.14",
+    "merchant_label_or_garbage_promoted": "reduced/fixed for tested patterns",
+    "toc_wrong_numeric_column": "fixed by edge-column row binding",
+    "legal_articles_false_toc": "fixed for article/section-dominated pages without contents heading",
+    "borderless_receipt_table_missing": "improved; flexible token geometry fallback added",
+    "raw_ocr_character_errors": "not claimed fixed; provider/model limitation remains",
+    "sroie_exact_four_images": "not rerun in this container"
+  }
+}

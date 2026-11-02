@@ -1,0 +1,24 @@
+{
+  "version": "0.23.0",
+  "feature": "bounded_parallel_execution",
+  "unit_regression": {
+    "collected": 383,
+    "passed": 383,
+    "execution": "split_groups",
+    "compileall": "passed"
+  },
+  "focused_v23_tests": 5,
+  "guarantees_tested": [
+    "parallel and sequential page extraction return identical page contracts and document order",
+    "OCR concurrency never exceeds configured gate",
+    "global Vision budget remains bounded under concurrent pages",
+    "AI page batches run within configured concurrency and merge in original batch order",
+    "public DataExtractionService wiring enforces page and OCR limits"
+  ],
+  "benchmark_file": "V23_PARALLEL_EXECUTION_BENCHMARK.json",
+  "notes": [
+    "Public API remains synchronous; concurrency is internal and bounded.",
+    "Regions within one page remain sequential by design to avoid nested worker explosions.",
+    "Speedup depends on provider latency, CPU availability and document composition."
+  ]
+}

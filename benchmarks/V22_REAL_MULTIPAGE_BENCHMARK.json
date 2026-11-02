@@ -1,0 +1,60 @@
+{
+  "version": "0.22.0",
+  "scenario": "three_page_same_layout_vs_semantic_drift",
+  "same_layout_new_value": {
+    "match_score": 1.0,
+    "match_status": "accepted",
+    "changed_pages": [],
+    "generic_extraction_performed": false,
+    "generic_extraction_pages": [],
+    "template_fast_path_pages": [
+      2
+    ],
+    "field": [
+      {
+        "name": "total",
+        "value": "999.99",
+        "verified": true,
+        "status": "verified_consensus"
+      }
+    ],
+    "calls": {
+      "generic_ocr_calls": 0,
+      "field_a_calls": 1,
+      "field_b_calls": 1
+    }
+  },
+  "semantic_drift_page_2": {
+    "match_score": 0.9698069852941176,
+    "match_status": "review_required",
+    "changed_pages": [
+      2
+    ],
+    "generic_extraction_performed": true,
+    "generic_extraction_pages": [
+      2
+    ],
+    "template_fast_path_pages": [],
+    "field": [
+      {
+        "name": "total",
+        "value": null,
+        "verified": false,
+        "status": "template_page_drift",
+        "review_reasons": [
+          "template_page_drift_requires_new_layout_review"
+        ]
+      }
+    ],
+    "calls": {
+      "generic_ocr_calls": 1,
+      "field_a_calls": 0,
+      "field_b_calls": 0
+    },
+    "page_region_counts": [
+      0,
+      1,
+      0
+    ]
+  }
+}

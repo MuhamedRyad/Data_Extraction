@@ -1,0 +1,47 @@
+{
+  "content_complete": false,
+  "text_coverage_complete": true,
+  "completeness_ratio": 0.0,
+  "semantic_complete": false,
+  "semantic_status": "partial",
+  "field_coverage_ratio": 1.0,
+  "verified_field_coverage_ratio": 0.0,
+  "page_kind": "receipt",
+  "fields": [
+    {
+      "kind": "merchant_name",
+      "value": "ACME MARKET",
+      "verified": false
+    },
+    {
+      "kind": "address",
+      "value": "123 MAIN STREET",
+      "verified": false
+    },
+    {
+      "kind": "total",
+      "value": "17.83",
+      "verified": false
+    },
+    {
+      "kind": "subtotal",
+      "value": "15.50",
+      "verified": false
+    },
+    {
+      "kind": "tax",
+      "value": "2.33",
+      "verified": false
+    },
+    {
+      "kind": "date",
+      "value": "31/10/2026",
+      "verified": false
+    }
+  ],
+  "diagnostics": [
+    "image:1: numeric_content_requires_review",
+    "page1: structured_fields_not_independently_verified",
+    "page1: financial_document_flat_ocr_without_structure"
+  ]
+}

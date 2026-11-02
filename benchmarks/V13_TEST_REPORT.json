@@ -1,0 +1,17 @@
+{
+  "version": "0.13.0",
+  "tests": 318,
+  "passed": 318,
+  "failed": 0,
+  "compileall": "passed",
+  "focus": [
+    "structured semantic completeness",
+    "high-confidence missing-field guard",
+    "borderless OCR table geometry",
+    "adaptive Tesseract language-profile conflicts",
+    "TOC false-positive reduction"
+  ],
+  "real_tesseract_synthetic_receipt": "benchmarks/V13_REAL_TESSERACT_RECEIPT.json",
+  "exact_user_sroie_zatca_funsd_rerun": false,
+  "reason": "exact local evaluation files were not available in this runtime"
+}

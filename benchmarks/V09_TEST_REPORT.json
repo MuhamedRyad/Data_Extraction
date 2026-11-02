@@ -1,0 +1,37 @@
+{
+  "version": "0.9.0",
+  "date": "2026-10-31",
+  "base": "0.8.0",
+  "tests": {
+    "total": 293,
+    "passed": 293,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_tests": 9,
+  "feature": "generic field-level / sensitive-value OCR verification",
+  "public_api": [
+    "DataExtractionService.verify_fields(FieldVerificationRequest)",
+    "FieldDefinition",
+    "FieldVerificationRequest",
+    "FieldVerificationResult",
+    "OCRLayoutProvider.recognize_regions()",
+    "OCRTextRegion"
+  ],
+  "compatibility": {
+    "extract_schema": "extraction.v0.6 unchanged",
+    "field_verification_schema": "field-verification.v0.1",
+    "inspect_extract_api": "retained",
+    "source_text_mutation": "none"
+  },
+  "wheel_smoke_test": "passed",
+  "notes": [
+    "Native schema-valid source can be verified directly.",
+    "OCR-derived values require independent consensus.",
+    "Template transforms are review evidence only and never count as independent consensus.",
+    "RTL/LTR label direction influences value-region geometry.",
+    "Punctuation spacing can be normalized for verification evidence without mutating source.",
+    "No domain-specific invoice/payment/customer patterns are hard-coded."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": "0.21.0",
+  "wheel": "generic_data_extraction_feature-0.21.0-py3-none-any.whl",
+  "clean_install": "passed",
+  "installed_module_path": "/mnt/data/v21_clean_install/data_extraction/__init__.py",
+  "adaptive_route": "deterministic_refine_review",
+  "full_generation_calls": 0,
+  "refinement_calls": 1,
+  "result": "passed"
+}

@@ -1,0 +1,28 @@
+{
+  "version": "0.12.0",
+  "date": "2026-10-31",
+  "tests_collected": 312,
+  "tests_passed": 312,
+  "tests_failed": 0,
+  "new_v12_tests": 5,
+  "public_schema": "extraction.v0.6",
+  "compileall_passed": true,
+  "wheel_built": true,
+  "wheel_smoke_test": true,
+  "wheel_sha256": "edb8a8b09a79c1b7f39fcf63a85f31d94eb90f9c6a4684012fff575a801bc8c6",
+  "fixes": {
+    "toc_title_page_binding": "implemented_geometry_structured_table",
+    "low_confidence_image_ocr": "bounded_preprocessing_recovery_review_only",
+    "raster_table_structure": "optional_token_geometry_candidate_reconstruction",
+    "mixed_rtl_numbers": "toc_and_table_binding_improved_general_case_still_review",
+    "toc_misclassified_diagram": "toc_evidence_precedes_diagram_classification",
+    "repeated_unresolved_impact": "raw_plus_critical_noncritical_counts"
+  },
+  "validation": {
+    "shnayer_first5_vs_original": "5/5 raster match and 5/5 text match",
+    "consumer_rights_original": "not_available_in_runtime",
+    "ministry_user_guide_original": "not_available_in_runtime",
+    "complex_figure_inside_columns": "known v0.11 limit remains; no claim of fix",
+    "external_layout_models": "not executed in this runtime"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "0.8.0",
+  "schema_version": "extraction.v0.6",
+  "execution_utc": "2026-10-31T08:25:18.331030+00:00",
+  "pytest": {
+    "tests": 284,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "baseline_tests": 263,
+  "new_tests": 21,
+  "ocr_accuracy_benchmark_executed": false,
+  "live_easyocr_executed": false,
+  "original_version_modified": false
+}

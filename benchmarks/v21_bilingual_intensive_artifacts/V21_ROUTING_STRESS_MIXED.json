@@ -1,0 +1,366 @@
+{
+  "summary": {
+    "cases": 30,
+    "passed": 30,
+    "failed": 0,
+    "by_language": {
+      "mixed": {
+        "passed": 30,
+        "total": 30
+      }
+    },
+    "by_profile": {
+      "complete": {
+        "passed": 12,
+        "total": 12
+      },
+      "missing_total": {
+        "passed": 6,
+        "total": 6
+      },
+      "missing_invoice": {
+        "passed": 6,
+        "total": 6
+      },
+      "semantic_trap": {
+        "passed": 6,
+        "total": 6
+      }
+    },
+    "full_generate_calls": 12,
+    "refine_calls": 36,
+    "review_calls": 36
+  },
+  "cases": [
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "complete",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_total",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_total",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_total",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_total",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_total",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_total",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_invoice",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_invoice",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_invoice",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_invoice",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_invoice",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "missing_invoice",
+      "ok": true,
+      "route": "ai_generate_review",
+      "q": 0.48000000000000004,
+      "gen": 1,
+      "refine": 1,
+      "review": 1,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "semantic_trap",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 2,
+      "review": 2,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "semantic_trap",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 2,
+      "review": 2,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "semantic_trap",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 2,
+      "review": 2,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "semantic_trap",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 2,
+      "review": 2,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "semantic_trap",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 2,
+      "review": 2,
+      "verdict": "pass"
+    },
+    {
+      "lang": "mixed",
+      "profile": "semantic_trap",
+      "ok": true,
+      "route": "deterministic_refine_review",
+      "q": 0.7200000000000001,
+      "gen": 0,
+      "refine": 2,
+      "review": 2,
+      "verdict": "pass"
+    }
+  ]
+}

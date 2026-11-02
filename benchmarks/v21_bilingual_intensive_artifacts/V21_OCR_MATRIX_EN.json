@@ -1,0 +1,270 @@
+{
+  "summary": {
+    "language": "en",
+    "documents": 8,
+    "invoice_classified": 8,
+    "required_exact": 24,
+    "required_total": 24,
+    "all5_exact": 40,
+    "all5_total": 40,
+    "false_address_count": 0
+  },
+  "cases": [
+    {
+      "case": 0,
+      "language": "en",
+      "degradation": "clean",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.9549891774891773,
+      "fields": {
+        "merchant_name": "NOVASUPPLIESLTD",
+        "total": "1050.00",
+        "subtotal": "1000.00",
+        "tax": "50.00",
+        "invoice_number": "INV-2026-800",
+        "date": "04/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": true
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 1,
+      "language": "en",
+      "degradation": "blur",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.9518184523809523,
+      "fields": {
+        "merchant_name": "NOVASUPPLIESLTD",
+        "total": "1053.15",
+        "subtotal": "1003.00",
+        "tax": "50.15",
+        "invoice_number": "INV-2026-801",
+        "date": "05/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": true
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 2,
+      "language": "en",
+      "degradation": "low_contrast",
+      "split": true,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.9538679653679654,
+      "fields": {
+        "merchant_name": "NOVASUPPLIESLTD",
+        "total": "1056.30",
+        "subtotal": "1006.00",
+        "tax": "50.30",
+        "invoice_number": "INV-2026-802",
+        "date": "06/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": true
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 3,
+      "language": "en",
+      "degradation": "noise",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.9524231601731601,
+      "fields": {
+        "merchant_name": "NOVASUPPLIESLTD",
+        "total": "1059.45",
+        "subtotal": "1009.00",
+        "tax": "50.45",
+        "invoice_number": "INV-2026-803",
+        "date": "07/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": true
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 4,
+      "language": "en",
+      "degradation": "skew",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.9466671759612936,
+      "fields": {
+        "merchant_name": "NOVASUPPLIESLTD",
+        "total": "1062.60",
+        "subtotal": "1012.00",
+        "tax": "50.60",
+        "invoice_number": "INV-2026-804",
+        "date": "08/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": true
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 5,
+      "language": "en",
+      "degradation": "clean",
+      "split": true,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.9538528138528138,
+      "fields": {
+        "merchant_name": "NOVASUPPLIESLTD",
+        "total": "1065.75",
+        "subtotal": "1015.00",
+        "tax": "50.75",
+        "invoice_number": "INV-2026-805",
+        "date": "09/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": true
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 6,
+      "language": "en",
+      "degradation": "blur",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.9526473214285713,
+      "fields": {
+        "merchant_name": "NOVASUPPLIESLTD",
+        "total": "1068.90",
+        "subtotal": "1018.00",
+        "tax": "50.90",
+        "invoice_number": "INV-2026-806",
+        "date": "10/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": true
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    },
+    {
+      "case": 7,
+      "language": "en",
+      "degradation": "noise",
+      "split": false,
+      "kind": "invoice",
+      "kind_confidence": 1.0,
+      "ocr_confidence": 0.9550725108225109,
+      "fields": {
+        "merchant_name": "NOVASUPPLIESLTD",
+        "total": "1072.05",
+        "subtotal": "1021.00",
+        "tax": "51.05",
+        "invoice_number": "INV-2026-807",
+        "date": "11/11/2026"
+      },
+      "required_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "all5_exact": {
+        "invoice_number": true,
+        "date": true,
+        "subtotal": true,
+        "tax": true,
+        "total": true
+      },
+      "false_address": null,
+      "extraction_status": "partial_success",
+      "semantic_status": "partial"
+    }
+  ]
+}

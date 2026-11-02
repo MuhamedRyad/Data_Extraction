@@ -1,0 +1,467 @@
+{
+  "version": "0.21.1",
+  "regression": {
+    "collected": 371,
+    "passed": 371,
+    "compileall": "passed"
+  },
+  "ocr_matrix": {
+    "en": {
+      "language": "en",
+      "documents": 8,
+      "invoice_classified": 8,
+      "required_exact": 24,
+      "required_total": 24,
+      "all5_exact": 40,
+      "all5_total": 40,
+      "false_address_count": 0
+    },
+    "ar": {
+      "language": "ar",
+      "documents": 8,
+      "invoice_classified": 8,
+      "required_exact": 16,
+      "required_total": 24,
+      "all5_exact": 32,
+      "all5_total": 40,
+      "false_address_count": 0
+    },
+    "mixed": {
+      "language": "mixed",
+      "documents": 8,
+      "invoice_classified": 8,
+      "required_exact": 20,
+      "required_total": 24,
+      "all5_exact": 30,
+      "all5_total": 40,
+      "false_address_count": 0
+    }
+  },
+  "routing_stress": {
+    "total_cases": 90,
+    "passed": 90,
+    "by_language": {
+      "en": {
+        "cases": 30,
+        "passed": 30,
+        "failed": 0,
+        "by_language": {
+          "en": {
+            "passed": 30,
+            "total": 30
+          }
+        },
+        "by_profile": {
+          "complete": {
+            "passed": 12,
+            "total": 12
+          },
+          "missing_total": {
+            "passed": 6,
+            "total": 6
+          },
+          "missing_invoice": {
+            "passed": 6,
+            "total": 6
+          },
+          "semantic_trap": {
+            "passed": 6,
+            "total": 6
+          }
+        },
+        "full_generate_calls": 12,
+        "refine_calls": 36,
+        "review_calls": 36
+      },
+      "ar": {
+        "cases": 30,
+        "passed": 30,
+        "failed": 0,
+        "by_language": {
+          "ar": {
+            "passed": 30,
+            "total": 30
+          }
+        },
+        "by_profile": {
+          "complete": {
+            "passed": 12,
+            "total": 12
+          },
+          "missing_total": {
+            "passed": 6,
+            "total": 6
+          },
+          "missing_invoice": {
+            "passed": 6,
+            "total": 6
+          },
+          "semantic_trap": {
+            "passed": 6,
+            "total": 6
+          }
+        },
+        "full_generate_calls": 12,
+        "refine_calls": 36,
+        "review_calls": 36
+      },
+      "mixed": {
+        "cases": 30,
+        "passed": 30,
+        "failed": 0,
+        "by_language": {
+          "mixed": {
+            "passed": 30,
+            "total": 30
+          }
+        },
+        "by_profile": {
+          "complete": {
+            "passed": 12,
+            "total": 12
+          },
+          "missing_total": {
+            "passed": 6,
+            "total": 6
+          },
+          "missing_invoice": {
+            "passed": 6,
+            "total": 6
+          },
+          "semantic_trap": {
+            "passed": 6,
+            "total": 6
+          }
+        },
+        "full_generate_calls": 12,
+        "refine_calls": 36,
+        "review_calls": 36
+      }
+    }
+  },
+  "e2e": {
+    "en": {
+      "language": "en",
+      "approved": true,
+      "approval_error": null,
+      "route": "deterministic_refine_review",
+      "initial_quality": 0.92,
+      "hard_failures": [],
+      "review": "pass",
+      "review_issues": [],
+      "diagnostics": [
+        "template_bootstrap_without_ai_requires_approval",
+        "deterministic_template_may_need_ai_geometry_refinement",
+        "adaptive_template_routing_enabled",
+        "adaptive_candidate_quality:0.520",
+        "adaptive_required_field_coverage:1.000",
+        "adaptive_geometry_precision:0.100",
+        "adaptive_anchor_coverage:1.000",
+        "adaptive_schema_valid_ratio:0.000",
+        "adaptive_table_structure_ratio:1.000",
+        "template_geometry_refinement_attempt:1",
+        "template_geometry_refined_by_ai_provider",
+        "benchmark_oracle_geometry_refined",
+        "template_geometry_refinement_attempts_exhausted",
+        "template_geometry_self_validation_incomplete",
+        "template_ai_review_passed",
+        "benchmark_oracle_semantic_review",
+        "adaptive_route:deterministic_refine_review"
+      ],
+      "generate_calls": 0,
+      "refine_calls": 1,
+      "review_calls": 1,
+      "repeat_match": 1.0,
+      "repeat_status": "accepted",
+      "repeat_fast_path": true,
+      "repeat_fields": {
+        "merchant_name": "",
+        "total": "171.15",
+        "subtotal": "163.00",
+        "tax": "8.15",
+        "invoice_number": "INV-2026-521",
+        "date": "22/11/2026"
+      },
+      "repeat_details": {
+        "merchant_name": {
+          "value": null,
+          "status": "value_region_not_found",
+          "verified": false,
+          "reasons": [
+            "template_field_crop_failed"
+          ]
+        },
+        "total": {
+          "value": "171.15",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "subtotal": {
+          "value": "163.00",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "tax": {
+          "value": "8.15",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "invoice_number": {
+          "value": "INV-2026-521",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "date": {
+          "value": "22/11/2026",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        }
+      },
+      "repeat_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "repeat_all_exact": true,
+      "repeat_semantic_complete": false,
+      "crop_calls": 16
+    },
+    "ar": {
+      "language": "ar",
+      "approved": true,
+      "approval_error": null,
+      "route": "deterministic_refine_review",
+      "initial_quality": 0.8800000000000001,
+      "hard_failures": [],
+      "review": "pass",
+      "review_issues": [],
+      "diagnostics": [
+        "template_bootstrap_without_ai_requires_approval",
+        "deterministic_template_may_need_ai_geometry_refinement",
+        "adaptive_template_routing_enabled",
+        "adaptive_candidate_quality:0.520",
+        "adaptive_required_field_coverage:1.000",
+        "adaptive_geometry_precision:0.100",
+        "adaptive_anchor_coverage:1.000",
+        "adaptive_schema_valid_ratio:0.000",
+        "adaptive_table_structure_ratio:1.000",
+        "template_geometry_refinement_attempt:1",
+        "template_geometry_refined_by_ai_provider",
+        "benchmark_oracle_geometry_refined",
+        "template_geometry_refinement_attempts_exhausted",
+        "template_geometry_self_validation_incomplete",
+        "template_ai_review_passed",
+        "benchmark_oracle_semantic_review",
+        "adaptive_route:deterministic_refine_review"
+      ],
+      "generate_calls": 0,
+      "refine_calls": 1,
+      "review_calls": 1,
+      "repeat_match": 1.0,
+      "repeat_status": "accepted",
+      "repeat_fast_path": true,
+      "repeat_fields": {
+        "merchant_name": "",
+        "total": "486.15",
+        "invoice_number": "INV-2026-621",
+        "date": "14/11/2026"
+      },
+      "repeat_details": {
+        "merchant_name": {
+          "value": null,
+          "status": "value_region_not_found",
+          "verified": false,
+          "reasons": [
+            "template_field_crop_failed"
+          ]
+        },
+        "total": {
+          "value": "486.15",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "invoice_number": {
+          "value": "INV-2026-621",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "date": {
+          "value": "14/11/2026",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        }
+      },
+      "repeat_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "repeat_all_exact": true,
+      "repeat_semantic_complete": false,
+      "crop_calls": 9
+    },
+    "mixed": {
+      "language": "mixed",
+      "approved": true,
+      "approval_error": null,
+      "route": "ai_generate_review",
+      "initial_quality": 0.4800000000000001,
+      "hard_failures": [],
+      "review": "pass",
+      "review_issues": [],
+      "diagnostics": [
+        "template_bootstrap_without_ai_requires_approval",
+        "deterministic_template_may_need_ai_geometry_refinement",
+        "adaptive_template_routing_enabled",
+        "adaptive_candidate_quality:0.480",
+        "adaptive_required_field_coverage:1.000",
+        "adaptive_geometry_precision:0.100",
+        "adaptive_anchor_coverage:1.000",
+        "adaptive_schema_valid_ratio:0.000",
+        "adaptive_table_structure_ratio:0.600",
+        "adaptive_route:ai_generate_review",
+        "template_generated_by_ai_provider_requires_approval",
+        "benchmark_oracle_full_generation",
+        "template_geometry_self_validation_passed",
+        "template_ai_review_passed",
+        "benchmark_oracle_semantic_review"
+      ],
+      "generate_calls": 1,
+      "refine_calls": 0,
+      "review_calls": 1,
+      "repeat_match": 0.9973958333333333,
+      "repeat_status": "accepted",
+      "repeat_fast_path": true,
+      "repeat_fields": {
+        "invoice_number": "INV-2026-721",
+        "date": "06/11/2026",
+        "subtotal": "763.00",
+        "tax": "38.15",
+        "total": "801.15"
+      },
+      "repeat_details": {
+        "invoice_number": {
+          "value": "INV-2026-721",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "date": {
+          "value": "06/11/2026",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "subtotal": {
+          "value": "763.00",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "tax": {
+          "value": "38.15",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        },
+        "total": {
+          "value": "801.15",
+          "status": "review_required",
+          "verified": false,
+          "reasons": [
+            "template_direct_crop_requires_independent_consensus",
+            "insufficient_independent_consensus"
+          ]
+        }
+      },
+      "repeat_exact": {
+        "invoice_number": true,
+        "date": true,
+        "total": true
+      },
+      "repeat_all_exact": true,
+      "repeat_semantic_complete": false,
+      "crop_calls": 15
+    }
+  },
+  "real_arabic_existing": {
+    "status": "partial_success",
+    "semantic_status": "partial",
+    "field_coverage_ratio": 0.3333333333333333,
+    "kind": "invoice",
+    "confidence": 0.9600000000000001,
+    "fields": [
+      {
+        "kind": "merchant_name",
+        "value": "الرقم الضرييق:",
+        "confidence": 0.8113264529365599
+      },
+      {
+        "kind": "date",
+        "value": "2024-05-1",
+        "confidence": 0.8113264529365599
+      }
+    ],
+    "text": [
+      "الرقم الضرييق:\n2012456789003\n\nالسجل التجاري:\n4030123456\n\nرقم ‎sail‏\n‏تاريخ الفاتورة: 2024-05-14\nوقت الفاتورة: 22\n\nالعنوان:\nالبريد الإلكتروني:\nرقم الجوال: ‏ 0501234567\n\nالصنف الوصف\n1001 حاسب محمول 15 ‎HP‏\n‏02 | شاشة سامسونج 24 يوصة\n60003 طابعة ليزر ‎HP 107a‏\n4004 كيبورد لوجيتك ‎K120‏\n‏£5005 ماوس لوجيتك 8100\nالمجموع قيل الضربية\n\nإجمالي ضربية القيمة المضافة )15%(\nالمبلغ الإجمالي ‎(ces)‏\n\nINV-2024-05891\n\n1\n\nبيانات الباتع\n\nاسم الشركة: المتجر الدذكي للتجارة\n\nفاتورة ضرييية\n\n(ضريية القيمة المضافة)\n\nالرياض - طريق الملك فهد\n\ninfo@smartstore.sa\n\n8,800.00\n1,320.00\n\n10,120.00\n\nاسم العميل: شركة الإبداع المحدودة\nالعتوان: ‎١‏ جدة- حي الروضة - شاء\n\nرقم الجوال: 0559876543\n\nسعر الوحدة ‎(ots)‏ | الإجمالي (رس)\n2,700.00 5,400.00\n650.00 ,1,950.00\n850.00 850.00\n75.00 375.00\n45.00 225.00\n\nتفاصيل التحويل\n\nالميلغ الإجمالي كتابة: عشرة ألاف ‎Bley‏ وعشرون ريال سعودي لا غير.\n\nالصفحة 1 من 2\n\nالرقم الضربيي: ‏ 300987654321003\n\n1 6789 2345 0001 1000 5814\nاسم الحساب: المتجر الذكي للتجارة\n\nالمتجر الذكي ‎SE‏\n\n@ @ Smart Store\n\nارع الأمير سلطان\n\n810.00\n\n292.50\n\n127.50\n\n56.25\n\n33.75\n\nالبنكي\nاسم البنك: البتك الأهلي السعودي\n\nملاحظات:\n\n+ يرجى تحويل المبلغ خلال 7 أبام من تاريخ الفاتورة.\n© في خال وجود أي استفسار يرجى التؤاضل ‎Line‏\n\nتوقيع وختم المعتمد\n\nA~S-"
+    ]
+  },
+  "fixes": [
+    "Arabic subtotal can no longer be promoted to total when the total label is missing/garbled.",
+    "Invoice-number lines are no longer promoted to address candidates.",
+    "Adaptive medium threshold lowered from 0.55 to 0.50 while hard failures still force full generation.",
+    "Medium-quality reviewer rejection can trigger one bounded Reviewer→Refiner→Reviewer retry.",
+    "Direct numeric/date field crops get one schema-driven upscale retry only when the first OCR is schema-invalid; retry does not count as independent consensus."
+  ],
+  "limits": [
+    "OCR matrix uses controlled synthetic documents; local Tesseract 5.5.0 ara+eng is real.",
+    "Routing stress uses deterministic fake OCR/AI contracts to stress orchestration, not live-model quality.",
+    "E2E AI generation/refinement/review uses a benchmark oracle with known geometry; no live external AI API was called.",
+    "E2E uses one crop OCR provider, so values remain review_required rather than verified_consensus.",
+    "Real Arabic existing-image smoke was OCR-only with external AI disabled."
+  ]
+}

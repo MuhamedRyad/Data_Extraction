@@ -1,0 +1,49 @@
+{
+  "version": "0.24.0",
+  "feature": "engineering_standard_refactor",
+  "behavior_change": "none_intended",
+  "phases": {
+    "phase_1": "result_error_options_strict_contracts",
+    "phase_2": "feature_boundaries_and_service_split",
+    "phase_3": "public_result_api_routers_and_compatibility"
+  },
+  "tests": {
+    "collected": 398,
+    "passed": 398,
+    "execution": "three_bounded_groups",
+    "groups": [
+      184,
+      144,
+      70
+    ]
+  },
+  "gates": {
+    "compileall": "passed",
+    "python_3_11_syntax": "passed",
+    "canonical_signature_typing": "passed",
+    "public_export_smoke": "passed",
+    "ruff": "configured_not_executed_tool_unavailable",
+    "mypy": "configured_not_executed_tool_unavailable",
+    "wheel_build": "passed",
+    "clean_install": "passed",
+    "clean_install_result_api": "passed",
+    "clean_install_legacy_api": "passed"
+  },
+  "architecture": {
+    "root_service_lines_before": 903,
+    "root_service_lines_after": 361,
+    "template_service_lines_before": 1274,
+    "template_service_lines_after": 983,
+    "template_workflow_lines": 659,
+    "template_matching_lines": 210,
+    "template_visual_fingerprints_lines": 146
+  },
+  "compatibility": {
+    "legacy_api_retained": true,
+    "new_result_api": true,
+    "legacy_tests_preserved": true
+  },
+  "known_style_debt": [
+    "historical algorithmic core does not annotate every inferred local variable"
+  ]
+}

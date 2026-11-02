@@ -1,0 +1,23 @@
+{
+  "version": "0.15.0",
+  "wheel_clean_install": true,
+  "template_flow": {
+    "candidate": "candidate",
+    "approved": "approved",
+    "match": "accepted",
+    "generic_extraction_performed": false,
+    "layout_full_ocr_calls": 0,
+    "layout_region_calls": 0,
+    "field": "total",
+    "value": "42.50",
+    "verified": true,
+    "field_status": "verified_consensus",
+    "semantic_complete": true
+  },
+  "notes": [
+    "first unknown layout candidate was explicitly approved",
+    "repeated layout used template fast path",
+    "generic extraction and whole-page layout OCR were skipped on repeated field-only layout",
+    "financial field became verified only through two independent OCR providers"
+  ]
+}

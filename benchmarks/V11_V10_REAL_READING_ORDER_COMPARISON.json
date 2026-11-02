@@ -1,0 +1,145 @@
+{
+  "v0.10": {
+    "arabic_first5": [
+      {
+        "page": 1,
+        "quality": "ambiguous_overlap",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "pdf_heading_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 2,
+        "quality": "ambiguous_overlap",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "vector_graphics_detected_review",
+          "pdf_heading_inferred_review",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 3,
+        "quality": "ambiguous_overlap",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "pdf_heading_inferred_review",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 4,
+        "quality": "ambiguous_overlap",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "pdf_heading_inferred_review",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      },
+      {
+        "page": 5,
+        "quality": "ambiguous_overlap",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "vector_graphics_detected_review",
+          "pdf_heading_inferred_review",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      }
+    ],
+    "org_chart": [
+      {
+        "page": 1,
+        "quality": "ambiguous_overlap",
+        "warnings": [
+          "vector_graphics_detected_review",
+          "pdf_heading_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      }
+    ],
+    "arabic_first5_summary": {
+      "ambiguous_pages": 5,
+      "geometric_pages": 0
+    }
+  },
+  "v0.11": {
+    "arabic_first5": [
+      {
+        "page": 1,
+        "quality": "geometric_estimate",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "page_semantic_simple_prose",
+          "pdf_heading_inferred_review"
+        ]
+      },
+      {
+        "page": 2,
+        "quality": "geometric_estimate",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "vector_graphics_detected_review",
+          "page_semantic_simple_prose",
+          "pdf_heading_inferred_review",
+          "pdf_page_furniture_inferred_review"
+        ]
+      },
+      {
+        "page": 3,
+        "quality": "geometric_estimate",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "page_semantic_simple_prose",
+          "pdf_heading_inferred_review",
+          "pdf_page_furniture_inferred_review"
+        ]
+      },
+      {
+        "page": 4,
+        "quality": "geometric_estimate",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "page_semantic_table_heavy",
+          "pdf_heading_inferred_review",
+          "pdf_page_furniture_inferred_review"
+        ]
+      },
+      {
+        "page": 5,
+        "quality": "ambiguous_overlap",
+        "warnings": [
+          "image_native_overlay_masked_for_ocr",
+          "vector_graphics_detected_review",
+          "page_semantic_mixed_layout",
+          "pdf_heading_inferred_review",
+          "pdf_page_furniture_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      }
+    ],
+    "org_chart": [
+      {
+        "page": 1,
+        "quality": "ambiguous_overlap",
+        "warnings": [
+          "vector_graphics_detected_review",
+          "reading_order_diagram_hierarchy_review_required",
+          "page_semantic_diagram_hierarchy",
+          "pdf_heading_inferred_review",
+          "reading_order_ambiguous_overlap"
+        ]
+      }
+    ],
+    "arabic_first5_summary": {
+      "ambiguous_pages": 1,
+      "geometric_pages": 4
+    }
+  }
+}

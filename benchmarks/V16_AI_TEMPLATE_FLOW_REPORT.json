@@ -1,0 +1,51 @@
+{
+  "api_request_count": 1,
+  "api_request_has_image": true,
+  "api_store": false,
+  "candidate_generator": "OpenAIResponsesTemplateProvider",
+  "candidate_status": "candidate",
+  "approved_status": "approved",
+  "match_status": "accepted",
+  "match_score": 1.0,
+  "generic_extraction_performed": false,
+  "semantic_complete": true,
+  "requires_review": false,
+  "expected": {
+    "invoice_number": "INV-2026-002",
+    "date": "02/11/2026",
+    "subtotal": "118.50",
+    "tax": "5.93",
+    "total": "124.43"
+  },
+  "actual": {
+    "invoice_number": "INV-2026-002",
+    "date": "02/11/2026",
+    "subtotal": "118.50",
+    "tax": "5.93",
+    "total": "124.43"
+  },
+  "field_matches": {
+    "invoice_number": true,
+    "date": true,
+    "subtotal": true,
+    "tax": true,
+    "total": true
+  },
+  "field_verified": {
+    "invoice_number": true,
+    "date": true,
+    "subtotal": true,
+    "tax": true,
+    "total": true
+  },
+  "all_expected_match": true,
+  "required_verified": true,
+  "repeat_field_ocr_calls": {
+    "psm6": 5,
+    "psm7": 5
+  },
+  "diagnostics": [
+    "template_preflight_match",
+    "template_fast_path_used"
+  ]
+}

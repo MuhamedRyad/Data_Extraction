@@ -1,0 +1,155 @@
+{
+  "version": "0.18.0",
+  "ai_generate_calls": 1,
+  "ai_refine_calls": 1,
+  "refinement_feedback": [
+    [
+      {
+        "field_name": "invoice_number",
+        "page_number": 1,
+        "current_value_bbox": [
+          0.12,
+          0.145,
+          0.25,
+          0.19
+        ],
+        "current_label_bbox": [
+          0.055,
+          0.145,
+          0.205,
+          0.175
+        ],
+        "status": "geometry_review_required",
+        "candidate_values": [
+          "roice No:I!"
+        ],
+        "schema_valid_values": [],
+        "review_reasons": [
+          "template_direct_crop_requires_independent_consensus",
+          "no_schema_valid_candidate"
+        ]
+      },
+      {
+        "field_name": "total",
+        "page_number": 1,
+        "current_value_bbox": [
+          0.55,
+          0.66,
+          0.7,
+          0.71
+        ],
+        "current_label_bbox": [
+          0.54,
+          0.66,
+          0.7,
+          0.7
+        ],
+        "status": "geometry_review_required",
+        "candidate_values": [
+          "Subtotal \\JAT Cov"
+        ],
+        "schema_valid_values": [],
+        "review_reasons": [
+          "template_direct_crop_requires_independent_consensus",
+          "no_schema_valid_candidate"
+        ]
+      }
+    ]
+  ],
+  "build_diagnostics": [
+    "template_generated_by_ai_provider_requires_approval",
+    "ai_one_shot_geometry_approximate",
+    "template_geometry_refinement_attempt:1",
+    "template_geometry_refined_by_ai_provider",
+    "ai_geometry_refined_from_crop_feedback",
+    "template_geometry_self_validation_passed"
+  ],
+  "candidate_fields": [
+    {
+      "name": "invoice_number",
+      "field_kind": "invoice_number",
+      "required": true,
+      "page_number": 1,
+      "anchors": [
+        "Invoice No"
+      ],
+      "pattern": "INV-\\d{4}-\\d{3}",
+      "mode": "label_relative",
+      "normalized_value_bbox": [
+        0.245,
+        0.155,
+        0.43,
+        0.205
+      ],
+      "normalized_label_bbox": [
+        0.055,
+        0.145,
+        0.205,
+        0.175
+      ],
+      "template": null,
+      "minimum_confidence": 0.7
+    },
+    {
+      "name": "total",
+      "field_kind": "money",
+      "required": true,
+      "page_number": 1,
+      "anchors": [
+        "TOTAL"
+      ],
+      "pattern": "\\d+[.,]\\d{2}",
+      "mode": "label_relative",
+      "normalized_value_bbox": [
+        0.79,
+        0.735,
+        0.92,
+        0.79
+      ],
+      "normalized_label_bbox": [
+        0.54,
+        0.66,
+        0.7,
+        0.7
+      ],
+      "template": null,
+      "minimum_confidence": 0.7
+    }
+  ],
+  "second_invoice": {
+    "match_score": 1.0,
+    "match_status": "accepted",
+    "generic_extraction_performed": false,
+    "fields": {
+      "invoice_number": {
+        "value": "INV-2026-002",
+        "verified": false,
+        "status": "review_required",
+        "reasons": [
+          "template_direct_crop_requires_independent_consensus",
+          "insufficient_independent_consensus"
+        ]
+      },
+      "total": {
+        "value": "124.43",
+        "verified": false,
+        "status": "review_required",
+        "reasons": [
+          "template_direct_crop_requires_independent_consensus",
+          "insufficient_independent_consensus"
+        ]
+      }
+    },
+    "semantic_complete": false,
+    "requires_review": true,
+    "diagnostics": [
+      "template_preflight_match",
+      "template_required_fields_not_verified",
+      "template_fast_path_used"
+    ]
+  },
+  "notes": [
+    "Real NOVA invoice images used. Tesseract was used on field crops during geometry self-validation.",
+    "Only one OCR provider was used in this focused refinement test, so financial values are not claimed independently verified here."
+  ]
+}

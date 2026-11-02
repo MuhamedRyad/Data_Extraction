@@ -1,0 +1,16 @@
+{
+  "wheel_version": "0.23.0",
+  "module_path": "/mnt/data/v23_clean/data_extraction/__init__.py",
+  "pages": 6,
+  "ocr_calls": 6,
+  "max_parallel_ocr_observed": 2,
+  "document_order": [
+    "p1:image:1",
+    "p2:image:1",
+    "p3:image:1",
+    "p4:image:1",
+    "p5:image:1",
+    "p6:image:1"
+  ],
+  "status": "complete_with_review"
+}

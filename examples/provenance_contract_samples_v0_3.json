@@ -1,0 +1,385 @@
+{
+  "schema_version": "extraction.v0.3",
+  "file_kind": "pdf",
+  "page_count": 5,
+  "page_order": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "page_region_counts": [
+    28,
+    9,
+    1,
+    1,
+    13
+  ],
+  "page_reading_order_quality": [
+    "geometric_estimate",
+    "geometric_estimate",
+    "geometric_estimate",
+    "geometric_estimate",
+    "geometric_estimate"
+  ],
+  "pages_requiring_review": [
+    3,
+    4,
+    5
+  ],
+  "vision_calls": 0,
+  "ready_for_publication": false,
+  "total_regions": 52,
+  "examples": [
+    {
+      "region_id": "p1:text:1",
+      "kind": "text",
+      "bbox": [
+        178.98895263671875,
+        45.354095458984375,
+        547.0770874023438,
+        89.70609283447266
+      ],
+      "method": "native",
+      "text": "نص أصلي مختلط عربي / إنجليزي- V2 اختبار",
+      "table": null,
+      "confidence": null,
+      "requires_review": false,
+      "review_reasons": [],
+      "route_reason": "native_text_direct",
+      "attempted_methods": [
+        "native"
+      ],
+      "source_kind": "text",
+      "content_type": "text",
+      "position": {
+        "page_number": 1,
+        "page_kind": "physical_page",
+        "page_label": "1",
+        "reading_order_index": 1,
+        "document_order_index": 1,
+        "source_stream_index": 1,
+        "reading_order_quality": "geometric_estimate",
+        "coordinate_system": "pdf_points_top_left",
+        "bbox": [
+          178.98895263671875,
+          45.354095458984375,
+          547.0770874023438,
+          89.70609283447266
+        ],
+        "normalized_bbox": [
+          0.300683,
+          0.053872,
+          0.919032,
+          0.106553
+        ]
+      },
+      "relations": {
+        "overlaps_region_ids": [],
+        "has_native_text_overlap": false,
+        "region_role": "primary",
+        "parent_region_id": null
+      },
+      "provenance": {
+        "source_id": "fixture:extraction-quality-v2",
+        "sha256": "b199cc52d3a486376edaf55ddadb00820a2b5a84d5111725f08834c8f5054193",
+        "source_file_kind": "pdf",
+        "original_region_kind": "text",
+        "source_surface": "native_pdf_text",
+        "extraction_method": "native",
+        "provider_name": "native_file_adapter",
+        "attempted_methods": [
+          "native"
+        ],
+        "source_image_role": null,
+        "native_text_masked": false,
+        "output_content_kind": "text",
+        "model_id": null,
+        "source_asset_sha256": null
+      },
+      "table_details": null,
+      "selected_provider_name": null,
+      "selected_model_id": null
+    },
+    {
+      "region_id": "p2:table:1",
+      "kind": "table",
+      "bbox": [
+        48.4858512878418,
+        195.65501403808594,
+        546.7968444824219,
+        452.85443115234375
+      ],
+      "method": "native",
+      "text": null,
+      "table": [
+        [
+          "ةيلاملا ةميقلا",
+          null,
+          "دنتسملا تانايب",
+          null,
+          null,
+          "م"
+        ],
+        [
+          "يلامجلاإ",
+          "ةيمكلا",
+          "ةلاحلا",
+          "فصولا",
+          "دوكلا",
+          null
+        ],
+        [
+          "450.000 ك.د",
+          "1",
+          "طشن",
+          "يونس ةنايص دقع",
+          "CNT-A101",
+          "1"
+        ],
+        [
+          "125.500 ك.د",
+          "2",
+          null,
+          "تامدخ ةروتاف",
+          "INV-B208",
+          "2"
+        ],
+        [
+          "0.000 ك.د",
+          "",
+          "ةعجارم",
+          "يبيرض قفرم",
+          "DOC-S505",
+          "3"
+        ],
+        [
+          "75.250 ك.د",
+          "3",
+          "لمتكم",
+          "يعجرم باطخ",
+          "REF-Z202",
+          "4"
+        ],
+        [
+          "650.750 ك.د",
+          "6",
+          "دمتعملا يلامجلاإ",
+          null,
+          null,
+          null
+        ]
+      ],
+      "confidence": null,
+      "requires_review": false,
+      "review_reasons": [],
+      "route_reason": "native_table_direct",
+      "attempted_methods": [
+        "native"
+      ],
+      "source_kind": "table",
+      "content_type": "table",
+      "position": {
+        "page_number": 2,
+        "page_kind": "physical_page",
+        "page_label": "2",
+        "reading_order_index": 4,
+        "document_order_index": 32,
+        "source_stream_index": null,
+        "reading_order_quality": "geometric_estimate",
+        "coordinate_system": "pdf_points_top_left",
+        "bbox": [
+          48.4858512878418,
+          195.65501403808594,
+          546.7968444824219,
+          452.85443115234375
+        ],
+        "normalized_bbox": [
+          0.081451,
+          0.2324,
+          0.918561,
+          0.537902
+        ]
+      },
+      "relations": {
+        "overlaps_region_ids": [],
+        "has_native_text_overlap": false,
+        "region_role": "primary",
+        "parent_region_id": null
+      },
+      "provenance": {
+        "source_id": "fixture:extraction-quality-v2",
+        "sha256": "b199cc52d3a486376edaf55ddadb00820a2b5a84d5111725f08834c8f5054193",
+        "source_file_kind": "pdf",
+        "original_region_kind": "table",
+        "source_surface": "native_pdf_table",
+        "extraction_method": "native",
+        "provider_name": "native_file_adapter",
+        "attempted_methods": [
+          "native"
+        ],
+        "source_image_role": null,
+        "native_text_masked": false,
+        "output_content_kind": "table",
+        "model_id": null,
+        "source_asset_sha256": null
+      },
+      "table_details": {
+        "row_count": 7,
+        "column_count": 6,
+        "rectangular": true,
+        "empty_cell_count": 9,
+        "merged_cell_geometry_available": false,
+        "header_row_verified": false
+      },
+      "selected_provider_name": null,
+      "selected_model_id": null
+    },
+    {
+      "region_id": "p3:image:rendered",
+      "kind": "text",
+      "bbox": [
+        0.0,
+        0.0,
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "method": "ocr",
+      "text": "نموذج ‎OCR‏ نظيف - اختبار الحقول الحساسة\n\nالصفحة 3 من 5 -\n\nبيانات الطلب\nرقم المرجع:\n\nرقم الفاتورة:\n\nرقم الملف:\nالتاريخ:\n\nالوقت:\n\nالمبلغ:\n\nالهاتف:\n\nالبريد:\n\nالرابط:\n\nنص مختلط\n\nتم استلام الطلب بنجاح. ويجب مطابقة رقم المرجع قبل اعتماد المعاملة.\n\nرة ممسوحة ضوئبًا فقط بدون طبقة نص,\n\n068-001188-6\nINV-2026-0015\n000245\n\nامسن رتنا\n\nBlo ٠١0\n\n18200 د.ك\n\n+965 5012 3456\n\nfinance@test-company.com\n\nhttps://portal.example.com/request/000245\n\nيحتوي هذا النموذج على حروف قد تتشابه بصريًا مثل 0 و 0 وا و1 واو8 و8 و5 و5 و2و2.\n\nلا يجوز تعديل رقم مرجعي تلقائيًا إذا لم يكن نمط الحقل معروقًا بدرجة ثقة كافية.\n\nجدول صغير داخل صورة ‎OCR‏\n\nott\n\nمقبول\nمقبول",
+      "table": null,
+      "confidence": 0.8666086956521739,
+      "requires_review": true,
+      "review_reasons": [
+        "numeric_content_requires_review"
+      ],
+      "route_reason": "ocr_confidence_gate",
+      "attempted_methods": [
+        "ocr"
+      ],
+      "source_kind": "image",
+      "content_type": "text",
+      "position": {
+        "page_number": 3,
+        "page_kind": "physical_page",
+        "page_label": "3",
+        "reading_order_index": 1,
+        "document_order_index": 38,
+        "source_stream_index": null,
+        "reading_order_quality": "geometric_estimate",
+        "coordinate_system": "pdf_points_top_left",
+        "bbox": [
+          0.0,
+          0.0,
+          595.2755737304688,
+          841.8897705078125
+        ],
+        "normalized_bbox": [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ]
+      },
+      "relations": {
+        "overlaps_region_ids": [],
+        "has_native_text_overlap": false,
+        "region_role": "primary",
+        "parent_region_id": null
+      },
+      "provenance": {
+        "source_id": "fixture:extraction-quality-v2",
+        "sha256": "b199cc52d3a486376edaf55ddadb00820a2b5a84d5111725f08834c8f5054193",
+        "source_file_kind": "pdf",
+        "original_region_kind": "image",
+        "source_surface": "pdf_page_render",
+        "extraction_method": "ocr",
+        "provider_name": "TesseractOCRProvider",
+        "attempted_methods": [
+          "ocr"
+        ],
+        "source_image_role": "rendered_page",
+        "native_text_masked": false,
+        "output_content_kind": "text",
+        "model_id": null,
+        "source_asset_sha256": "b94aab46ae101a7bc89161943bdecba5cb0176cc24d3d82e804852ebbd61c45e"
+      },
+      "table_details": null,
+      "selected_provider_name": "TesseractOCRProvider",
+      "selected_model_id": null
+    },
+    {
+      "region_id": "p5:image:1",
+      "kind": "text",
+      "bbox": [
+        48.9389762878418,
+        382.49053955078125,
+        546.3366088867188,
+        636.3348388671875
+      ],
+      "method": "ocr",
+      "text": "مطلوت.\n\n31/12/2026\n\n15/09/2026\n\n01/01/2027\n\n30/08/2026\n\n2\n\nلاحظة تاريخ الانتهاء الكمية 5 1\n\nA-101\n\nB-202\n\n0-015\n\n1-111\n\nS-505\n\n2-02",
+      "table": null,
+      "confidence": 0.9102941176470588,
+      "requires_review": true,
+      "review_reasons": [
+        "raster_table_structure_not_reconstructed",
+        "numeric_content_requires_review"
+      ],
+      "route_reason": "ocr_confidence_gate",
+      "attempted_methods": [
+        "ocr"
+      ],
+      "source_kind": "image",
+      "content_type": "text",
+      "position": {
+        "page_number": 5,
+        "page_kind": "physical_page",
+        "page_label": "5",
+        "reading_order_index": 10,
+        "document_order_index": 49,
+        "source_stream_index": 10,
+        "reading_order_quality": "geometric_estimate",
+        "coordinate_system": "pdf_points_top_left",
+        "bbox": [
+          48.9389762878418,
+          382.49053955078125,
+          546.3366088867188,
+          636.3348388671875
+        ],
+        "normalized_bbox": [
+          0.082212,
+          0.454324,
+          0.917788,
+          0.755841
+        ]
+      },
+      "relations": {
+        "overlaps_region_ids": [],
+        "has_native_text_overlap": false,
+        "region_role": "primary",
+        "parent_region_id": null
+      },
+      "provenance": {
+        "source_id": "fixture:extraction-quality-v2",
+        "sha256": "b199cc52d3a486376edaf55ddadb00820a2b5a84d5111725f08834c8f5054193",
+        "source_file_kind": "pdf",
+        "original_region_kind": "image",
+        "source_surface": "pdf_embedded_image",
+        "extraction_method": "ocr",
+        "provider_name": "TesseractOCRProvider",
+        "attempted_methods": [
+          "ocr"
+        ],
+        "source_image_role": "raster_grid_table",
+        "native_text_masked": false,
+        "output_content_kind": "text",
+        "model_id": null,
+        "source_asset_sha256": "5f460d6be7b45893ee5e48136d5f74bd0ca9cd2c909bdffc6d38592c102ce22e"
+      },
+      "table_details": null,
+      "selected_provider_name": "TesseractOCRProvider",
+      "selected_model_id": null
+    }
+  ]
+}

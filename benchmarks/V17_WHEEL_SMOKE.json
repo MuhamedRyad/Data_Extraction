@@ -1,0 +1,9 @@
+{
+  "wheel_version": "0.17.0",
+  "strong_plain_ai_calls": 0,
+  "strong_plain_method": "ocr",
+  "low_ocr_ai_calls": 1,
+  "low_ocr_method": "vision_model",
+  "low_total_vision_calls": 1,
+  "selective_ai_diagnostic": true
+}

@@ -1,0 +1,9 @@
+{
+  "version": "0.22.0",
+  "wheel_build": "passed",
+  "clean_install": "passed",
+  "installed_version": "0.22.0",
+  "page_batch_smoke": [[1,2,3,4],[5,6,7,8],[9]],
+  "max_pages_per_ai_batch": 4,
+  "selective_page_fallback_enabled": true
+}

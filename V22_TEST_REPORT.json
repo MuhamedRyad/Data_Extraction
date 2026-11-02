@@ -1,0 +1,27 @@
+{
+  "version": "0.22.0",
+  "feature": "multi_page_template_hardening_and_ai_batching",
+  "tests_collected": 378,
+  "result": "passed",
+  "execution": "bounded_groups",
+  "compileall": "passed",
+  "focused_v22_tests": 7,
+  "capabilities": [
+    "per_page_visual_fingerprints",
+    "stable_anchor_visual_hashes",
+    "page_level_template_match",
+    "selective_pdf_page_fallback",
+    "changed_page_template_geometry_block",
+    "bounded_consecutive_ai_page_batches",
+    "legacy_multi_page_fail_closed",
+    "sqlite_round_trip_new_fingerprints"
+  ],
+  "notes": [
+    "Single-process regression is intentionally not used because prior versions exceed the execution timeout; groups all passed.",
+    "OpenAI batching transport tests use mocked HTTP; no live API key was used.",
+    "Real multi-page safety benchmark uses local Tesseract."
+  ],
+  "wheel_build": "passed",
+  "clean_install": "passed",
+  "wheel_smoke": "passed"
+}

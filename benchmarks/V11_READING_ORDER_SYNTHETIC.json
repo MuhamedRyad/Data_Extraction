@@ -1,0 +1,158 @@
+[
+  {
+    "scenario": "single_column_ltr",
+    "predicted": [
+      "H",
+      "A1",
+      "A2",
+      "A3",
+      "F"
+    ],
+    "expected": [
+      "H",
+      "A1",
+      "A2",
+      "A3",
+      "F"
+    ],
+    "pairwise_accuracy": 1.0,
+    "exact_match": true,
+    "warnings": [],
+    "semantic_class": "simple_prose",
+    "confidence": 0.9,
+    "used_spatial_graph": false,
+    "edge_count": 0
+  },
+  {
+    "scenario": "two_column_ltr",
+    "predicted": [
+      "H",
+      "L1",
+      "L2",
+      "L3",
+      "R1",
+      "R2",
+      "R3",
+      "F"
+    ],
+    "expected": [
+      "H",
+      "L1",
+      "L2",
+      "L3",
+      "R1",
+      "R2",
+      "R3",
+      "F"
+    ],
+    "pairwise_accuracy": 1.0,
+    "exact_match": true,
+    "warnings": [
+      "reading_order_columns_inferred_review"
+    ],
+    "semantic_class": "multi_column_prose",
+    "confidence": 0.95,
+    "used_spatial_graph": true,
+    "edge_count": 5
+  },
+  {
+    "scenario": "two_column_rtl",
+    "predicted": [
+      "H",
+      "R1",
+      "R2",
+      "R3",
+      "L1",
+      "L2",
+      "L3",
+      "F"
+    ],
+    "expected": [
+      "H",
+      "R1",
+      "R2",
+      "R3",
+      "L1",
+      "L2",
+      "L3",
+      "F"
+    ],
+    "pairwise_accuracy": 1.0,
+    "exact_match": true,
+    "warnings": [
+      "reading_order_columns_inferred_review"
+    ],
+    "semantic_class": "multi_column_prose",
+    "confidence": 0.95,
+    "used_spatial_graph": true,
+    "edge_count": 5
+  },
+  {
+    "scenario": "spanning_sections_ltr",
+    "predicted": [
+      "H",
+      "L1",
+      "L2",
+      "R1",
+      "R2",
+      "S",
+      "L3",
+      "L4",
+      "R3",
+      "R4",
+      "F"
+    ],
+    "expected": [
+      "H",
+      "L1",
+      "L2",
+      "R1",
+      "R2",
+      "S",
+      "L3",
+      "L4",
+      "R3",
+      "R4",
+      "F"
+    ],
+    "pairwise_accuracy": 1.0,
+    "exact_match": true,
+    "warnings": [
+      "reading_order_columns_inferred_review"
+    ],
+    "semantic_class": "multi_column_prose",
+    "confidence": 0.95,
+    "used_spatial_graph": true,
+    "edge_count": 6
+  },
+  {
+    "scenario": "complex_with_figure",
+    "predicted": [
+      "H",
+      "L1",
+      "R1",
+      "IMG",
+      "L2",
+      "R2",
+      "F"
+    ],
+    "expected": [
+      "H",
+      "L1",
+      "L2",
+      "R1",
+      "R2",
+      "IMG",
+      "F"
+    ],
+    "pairwise_accuracy": 0.8571,
+    "exact_match": false,
+    "warnings": [
+      "reading_order_complex_columns_review_required"
+    ],
+    "semantic_class": "multi_column_prose",
+    "confidence": 0.4,
+    "used_spatial_graph": false,
+    "edge_count": 3
+  }
+]

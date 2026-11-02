@@ -1,0 +1,998 @@
+{
+  "version": "0.2.0",
+  "file": "extraction_quality_test_v2_5pages.pdf",
+  "pages": 5,
+  "quality_gate_passed": false,
+  "total_vision_calls": 0,
+  "disclaimer": "Routing evidence only. No field-level ground-truth accuracy measured.",
+  "page_results": [
+    {
+      "page_number": 1,
+      "physical_page": true,
+      "source_regions": [
+        {
+          "region_id": "p1:text:1",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:2",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:3",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:4",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:5",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:6",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:7",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:8",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:9",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:10",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:11",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:12",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:13",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:14",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:15",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:16",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:17",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:18",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:19",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:20",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:21",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:22",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:23",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:24",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:25",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:26",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:27",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p1:text:28",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        }
+      ],
+      "extracted_regions": [
+        {
+          "region_id": "p1:text:1",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:2",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:3",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:4",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:5",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:6",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:7",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:8",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:9",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:10",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:11",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:12",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:13",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:14",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:15",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:16",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:17",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:18",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:19",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:20",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:21",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:22",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:23",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:24",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:25",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:26",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:27",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p1:text:28",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "page_number": 2,
+      "physical_page": true,
+      "source_regions": [
+        {
+          "region_id": "p2:text:1",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p2:text:2",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p2:text:3",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p2:table:1",
+          "kind": "table",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p2:text:4",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p2:table:2",
+          "kind": "table",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p2:text:5",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p2:text:6",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p2:text:7",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        }
+      ],
+      "extracted_regions": [
+        {
+          "region_id": "p2:text:1",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p2:text:2",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p2:text:3",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p2:table:1",
+          "source_kind": "table",
+          "content_kind": "table",
+          "method": "native",
+          "route_reason": "native_table_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p2:text:4",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p2:table:2",
+          "source_kind": "table",
+          "content_kind": "table",
+          "method": "native",
+          "route_reason": "native_table_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p2:text:5",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p2:text:6",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p2:text:7",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        }
+      ],
+      "requires_review": false
+    },
+    {
+      "page_number": 3,
+      "physical_page": true,
+      "source_regions": [
+        {
+          "region_id": "p3:image:rendered",
+          "kind": "image",
+          "content_hint": null,
+          "image_role": "rendered_page"
+        }
+      ],
+      "extracted_regions": [
+        {
+          "region_id": "p3:image:rendered",
+          "source_kind": "image",
+          "content_kind": "text",
+          "method": "ocr",
+          "route_reason": "ocr_confidence_gate",
+          "attempted_methods": [
+            "ocr"
+          ],
+          "requires_review": true,
+          "review_reasons": [
+            "numeric_content_requires_review"
+          ]
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "page_number": 4,
+      "physical_page": true,
+      "source_regions": [
+        {
+          "region_id": "p4:image:rendered",
+          "kind": "image",
+          "content_hint": null,
+          "image_role": "rendered_page"
+        }
+      ],
+      "extracted_regions": [
+        {
+          "region_id": "p4:image:rendered",
+          "source_kind": "image",
+          "content_kind": "text",
+          "method": "ocr",
+          "route_reason": "ocr_confidence_gate",
+          "attempted_methods": [
+            "ocr"
+          ],
+          "requires_review": true,
+          "review_reasons": [
+            "numeric_content_requires_review"
+          ]
+        }
+      ],
+      "requires_review": true
+    },
+    {
+      "page_number": 5,
+      "physical_page": true,
+      "source_regions": [
+        {
+          "region_id": "p5:text:1",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:2",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:3",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:4",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:5",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:6",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:7",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:8",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:9",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:image:1",
+          "kind": "image",
+          "content_hint": "table",
+          "image_role": "raster_grid_table"
+        },
+        {
+          "region_id": "p5:text:10",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:11",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        },
+        {
+          "region_id": "p5:text:12",
+          "kind": "text",
+          "content_hint": null,
+          "image_role": null
+        }
+      ],
+      "extracted_regions": [
+        {
+          "region_id": "p5:text:1",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:2",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:3",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:4",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:5",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:6",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:7",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:8",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:9",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:image:1",
+          "source_kind": "image",
+          "content_kind": "text",
+          "method": "ocr",
+          "route_reason": "ocr_confidence_gate",
+          "attempted_methods": [
+            "ocr"
+          ],
+          "requires_review": true,
+          "review_reasons": [
+            "raster_table_structure_not_reconstructed",
+            "numeric_content_requires_review"
+          ]
+        },
+        {
+          "region_id": "p5:text:10",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:11",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        },
+        {
+          "region_id": "p5:text:12",
+          "source_kind": "text",
+          "content_kind": "text",
+          "method": "native",
+          "route_reason": "native_text_direct",
+          "attempted_methods": [
+            "native"
+          ],
+          "requires_review": false,
+          "review_reasons": []
+        }
+      ],
+      "requires_review": true
+    }
+  ]
+}

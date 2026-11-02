@@ -1,0 +1,413 @@
+{
+  "fixture_count": 5,
+  "comparison_type": "synthetic_vector_text_order_only",
+  "external_ml_engines": "not_run_unavailable",
+  "cases": {
+    "two_columns": {
+      "golden": [
+        "LX1",
+        "LX2",
+        "RX1",
+        "RX2"
+      ],
+      "page_count": 1,
+      "engines": {
+        "feature_v0_5": {
+          "tokens": [
+            "LX1",
+            "LX2",
+            "RX1",
+            "RX2"
+          ],
+          "pairwise_order_score": 1.0,
+          "exact_order": true,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 6.84
+        },
+        "pymupdf_sort": {
+          "tokens": [
+            "LX1",
+            "RX1",
+            "LX2",
+            "RX2"
+          ],
+          "pairwise_order_score": 0.8333,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 0.95
+        },
+        "pdfplumber_default": {
+          "tokens": [
+            "LX1",
+            "RX1",
+            "LX2",
+            "RX2"
+          ],
+          "pairwise_order_score": 0.8333,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 4.39
+        },
+        "feature_v0_4": {
+          "tokens": [
+            "LX1",
+            "LX2",
+            "RX1",
+            "RX2"
+          ],
+          "pairwise_order_score": 1.0,
+          "exact_order": true,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 1411.02
+        }
+      }
+    },
+    "three_columns": {
+      "golden": [
+        "LX1",
+        "LX2",
+        "MX1",
+        "MX2",
+        "RX1",
+        "RX2"
+      ],
+      "page_count": 1,
+      "engines": {
+        "feature_v0_5": {
+          "tokens": [
+            "LX1",
+            "LX2",
+            "MX1",
+            "MX2",
+            "RX1",
+            "RX2"
+          ],
+          "pairwise_order_score": 1.0,
+          "exact_order": true,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 2.88
+        },
+        "pymupdf_sort": {
+          "tokens": [
+            "LX1",
+            "MX1",
+            "RX1",
+            "LX2",
+            "MX2",
+            "RX2"
+          ],
+          "pairwise_order_score": 0.8,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 1.23
+        },
+        "pdfplumber_default": {
+          "tokens": [
+            "LX1",
+            "MX1",
+            "RX1",
+            "LX2",
+            "MX2",
+            "RX2"
+          ],
+          "pairwise_order_score": 0.8,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 2.51
+        },
+        "feature_v0_4": {
+          "tokens": [
+            "LX1",
+            "LX2",
+            "MX1",
+            "RX1",
+            "MX2",
+            "RX2"
+          ],
+          "pairwise_order_score": 0.9333,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 1566.32
+        }
+      }
+    },
+    "heading_two_columns_footer": {
+      "golden": [
+        "HEAD1",
+        "LX1",
+        "LX2",
+        "RX1",
+        "RX2",
+        "FOOT1"
+      ],
+      "page_count": 1,
+      "engines": {
+        "feature_v0_5": {
+          "tokens": [
+            "HEAD1",
+            "LX1",
+            "LX2",
+            "RX1",
+            "RX2",
+            "FOOT1"
+          ],
+          "pairwise_order_score": 1.0,
+          "exact_order": true,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 2.76
+        },
+        "pymupdf_sort": {
+          "tokens": [
+            "HEAD1",
+            "LX1",
+            "RX1",
+            "LX2",
+            "RX2",
+            "FOOT1"
+          ],
+          "pairwise_order_score": 0.9333,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 1.5
+        },
+        "pdfplumber_default": {
+          "tokens": [
+            "HEAD1",
+            "LX1",
+            "RX1",
+            "LX2",
+            "RX2",
+            "FOOT1"
+          ],
+          "pairwise_order_score": 0.9333,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 3.57
+        },
+        "feature_v0_4": {
+          "tokens": [
+            "HEAD1",
+            "LX1",
+            "LX2",
+            "FOOT1",
+            "RX1",
+            "RX2"
+          ],
+          "pairwise_order_score": 0.8667,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 1392.63
+        }
+      }
+    },
+    "two_physical_pages": {
+      "golden": [
+        "LX1",
+        "LX2",
+        "RX1",
+        "RX2",
+        "LX3",
+        "LX4",
+        "RX3",
+        "RX4"
+      ],
+      "page_count": 2,
+      "engines": {
+        "feature_v0_5": {
+          "tokens": [
+            "LX1",
+            "LX2",
+            "RX1",
+            "RX2",
+            "LX3",
+            "LX4",
+            "RX3",
+            "RX4"
+          ],
+          "pairwise_order_score": 1.0,
+          "exact_order": true,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 4.02
+        },
+        "pymupdf_sort": {
+          "tokens": [
+            "LX1",
+            "RX1",
+            "LX2",
+            "RX2",
+            "LX3",
+            "RX3",
+            "LX4",
+            "RX4"
+          ],
+          "pairwise_order_score": 0.9286,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 1.72
+        },
+        "pdfplumber_default": {
+          "tokens": [
+            "LX1",
+            "RX1",
+            "LX2",
+            "RX2",
+            "LX3",
+            "RX3",
+            "LX4",
+            "RX4"
+          ],
+          "pairwise_order_score": 0.9286,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 4.83
+        },
+        "feature_v0_4": {
+          "tokens": [
+            "LX1",
+            "LX2",
+            "RX1",
+            "RX2",
+            "LX3",
+            "LX4",
+            "RX3",
+            "RX4"
+          ],
+          "pairwise_order_score": 1.0,
+          "exact_order": true,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 1428.32
+        }
+      }
+    },
+    "spanning_middle_block": {
+      "golden": [
+        "LX1",
+        "LX2",
+        "RX1",
+        "RX2",
+        "WIDE1",
+        "LX3",
+        "LX4",
+        "RX3",
+        "RX4"
+      ],
+      "page_count": 1,
+      "engines": {
+        "feature_v0_5": {
+          "tokens": [
+            "LX1",
+            "LX2",
+            "RX1",
+            "RX2",
+            "WIDE1",
+            "LX3",
+            "LX4",
+            "RX3",
+            "RX4"
+          ],
+          "pairwise_order_score": 1.0,
+          "exact_order": true,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 3.94
+        },
+        "pymupdf_sort": {
+          "tokens": [
+            "LX1",
+            "RX1",
+            "LX2",
+            "RX2",
+            "WIDE1",
+            "LX3",
+            "RX3",
+            "LX4",
+            "RX4"
+          ],
+          "pairwise_order_score": 0.9444,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 1.67
+        },
+        "pdfplumber_default": {
+          "tokens": [
+            "LX1",
+            "RX1",
+            "LX2",
+            "RX2",
+            "WIDE1",
+            "LX3",
+            "RX3",
+            "LX4",
+            "RX4"
+          ],
+          "pairwise_order_score": 0.9444,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 4.57
+        },
+        "feature_v0_4": {
+          "tokens": [
+            "LX1",
+            "RX1",
+            "LX2",
+            "RX2",
+            "WIDE1",
+            "LX3",
+            "RX3",
+            "LX4",
+            "RX4"
+          ],
+          "pairwise_order_score": 0.9444,
+          "exact_order": false,
+          "complete": true,
+          "missing_tokens": [],
+          "elapsed_ms": 1436.23
+        }
+      }
+    }
+  },
+  "summary": {
+    "feature_v0_5": {
+      "successful_runs": 5,
+      "exact_order_cases": 5,
+      "mean_pairwise_order_score": 1.0,
+      "all_tokens_preserved_cases": 5
+    },
+    "pymupdf_sort": {
+      "successful_runs": 5,
+      "exact_order_cases": 0,
+      "mean_pairwise_order_score": 0.8879,
+      "all_tokens_preserved_cases": 5
+    },
+    "pdfplumber_default": {
+      "successful_runs": 5,
+      "exact_order_cases": 0,
+      "mean_pairwise_order_score": 0.8879,
+      "all_tokens_preserved_cases": 5
+    },
+    "feature_v0_4": {
+      "successful_runs": 5,
+      "exact_order_cases": 2,
+      "mean_pairwise_order_score": 0.9489,
+      "all_tokens_preserved_cases": 5
+    }
+  }
+}
