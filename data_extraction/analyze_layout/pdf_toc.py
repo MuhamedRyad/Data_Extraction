@@ -140,6 +140,21 @@ def detect_toc_table(
         return None
     pairs.sort(key=lambda pair: min(_center_y(pair[0].bbox), _center_y(pair[1].bbox)))
 
+    # Invoice and statement rows can look exactly like a title/page-number
+    # pair. A compact header containing multiple financial/table columns is
+    # stronger evidence of a data table than of a TOC.
+    table_header_terms: tuple[str, ...] = (
+        "description", "qty", "quantity", "unit price", "amount",
+        "subtotal", "debit", "credit", "balance",
+    )
+    all_line_text: str = " ".join(line.text.casefold() for line in lines)
+    has_data_table_header: bool = any(
+        sum(term in line.text.casefold() for term in table_header_terms) >= 2
+        for line in lines
+    )
+    if has_data_table_header and "contents" not in all_line_text:
+        return None
+
     # v0.13: reject statistics/list tables that merely contain a text column and
     # a numeric column. Real TOC page references normally occupy one narrow edge
     # column and are mostly non-decreasing. A visible contents heading relaxes

@@ -28,6 +28,67 @@ def _needs_layout_fallback(page: PageCandidates) -> bool:
     return False
 
 
+def _render_layout_page(
+    page: fitz.Page,
+    options: ExtractionOptions,
+) -> tuple[bytes, bool]:
+    """Render a layout input in the same unrotated coordinate space as regions."""
+    rotation: int = page.rotation
+    cropbox: fitz.Rect = fitz.Rect(page.cropbox)
+    try:
+        # Inspect stores PDF geometry in source/unrotated coordinates. The
+        # layout model must receive pixels with the same orientation, otherwise
+        # its returned order is grounded against a different coordinate space.
+        if rotation:
+            page.set_rotation(0)
+        page_rect: fitz.Rect = page.rect
+        requested_scale: float = options.layout_render_dpi / 72.0
+        scale: float = requested_scale
+        downscaled: bool = False
+        pixels: float = page_rect.width * page_rect.height * scale * scale
+        if pixels > options.max_image_pixels:
+            if not options.adaptive_image_recovery:
+                raise ValueError("layout_render_pixel_budget_exceeded")
+            maximum_scale: float = (
+                options.max_image_pixels / max(1.0, page_rect.width * page_rect.height)
+            ) ** 0.5
+            minimum_scale: float = options.min_image_dpi / 72.0
+            if maximum_scale < minimum_scale:
+                raise ValueError("layout_render_pixel_budget_exceeded")
+            scale = min(requested_scale, max(minimum_scale, maximum_scale * 0.995))
+            downscaled = scale < requested_scale
+
+        minimum_scale = options.min_image_dpi / 72.0
+        pixmap: fitz.Pixmap | None = None
+        for attempt in range(4):
+            pixmap = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False)
+            if pixmap.width * pixmap.height <= options.max_image_pixels:
+                break
+            if not options.adaptive_image_recovery or scale <= minimum_scale or attempt == 3:
+                raise ValueError("layout_render_pixel_budget_exceeded")
+            actual_pixels: int = pixmap.width * pixmap.height
+            next_scale: float = scale * (
+                options.max_image_pixels / max(1, actual_pixels)
+            ) ** 0.5 * 0.995
+            if attempt == 2:
+                next_scale = minimum_scale
+            next_scale = max(minimum_scale, next_scale)
+            if next_scale >= scale:
+                raise ValueError("layout_render_pixel_budget_exceeded")
+            del pixmap
+            pixmap = None
+            scale = next_scale
+            downscaled = True
+        if pixmap is None:
+            raise ValueError("layout_render_failed")
+        return pixmap.tobytes("png"), downscaled
+    finally:
+        if page.cropbox != cropbox:
+            page.set_cropbox(cropbox)
+        if page.rotation != rotation:
+            page.set_rotation(rotation)
+
+
 class AnalyzeLayoutAction:
     def __init__(self, provider: LayoutOrderProvider) -> None:
         self._provider: LayoutOrderProvider = provider
@@ -54,27 +115,13 @@ class AnalyzeLayoutAction:
                 calls += 1
                 try:
                     pdf_page: fitz.Page = pdf[page.number - 1]
-                    requested_scale: float = options.layout_render_dpi / 72.0
-                    scale: float = requested_scale
-                    layout_downscaled: bool = False
-                    pixels: float = pdf_page.rect.width * pdf_page.rect.height * scale * scale
-                    if pixels > options.max_image_pixels:
-                        if not options.adaptive_image_recovery:
-                            raise ValueError("layout_render_pixel_budget_exceeded")
-                        maximum_scale: float = (
-                            options.max_image_pixels / max(1.0, pdf_page.rect.width * pdf_page.rect.height)
-                        ) ** 0.5
-                        minimum_scale: float = options.min_image_dpi / 72.0
-                        if maximum_scale < minimum_scale:
-                            raise ValueError("layout_render_pixel_budget_exceeded")
-                        scale = min(requested_scale, maximum_scale)
-                        layout_downscaled = scale < requested_scale
-                    pixmap: fitz.Pixmap = pdf_page.get_pixmap(
-                        matrix=fitz.Matrix(scale, scale), alpha=False)
-                    render: bytes = pixmap.tobytes("png")
+                    source_rect: fitz.Rect = pdf_page.rect * pdf_page.derotation_matrix
+                    render, layout_downscaled = _render_layout_page(pdf_page, options)
                     request: LayoutPageRequest = LayoutPageRequest(
-                        page.number, float(page.width or pdf_page.rect.width),
-                        float(page.height or pdf_page.rect.height), render,
+                        page.number,
+                        float(page.width if page.width is not None else source_rect.width),
+                        float(page.height if page.height is not None else source_rect.height),
+                        render,
                         tuple(LayoutRegion(r.region_id, r.kind, r.bbox) for r in page.regions))
                     prediction: LayoutOrderPrediction = self._provider.predict_order(request)
                     self._validate(prediction, page)

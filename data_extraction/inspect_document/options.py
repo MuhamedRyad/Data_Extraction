@@ -10,6 +10,7 @@ class InspectDocumentOptions(StrictContract):
     """Options required to validate and inspect native document structure."""
 
     max_input_bytes: int = 15_000_000
+    max_original_image_bytes: int = 15_000_000
     max_uncompressed_zip_bytes: int = 40_000_000
     max_pages: int = 100
     max_regions_per_page: int = 500
@@ -20,8 +21,6 @@ class InspectDocumentOptions(StrictContract):
     min_image_dpi: int = 72
     adaptive_image_recovery: bool = True
     detect_raster_table_grids: bool = True
-    analyze_pdf_rtl_geometry: bool = False
-    decorative_region_max_area_ratio: float = 0.0015
     selected_pdf_pages: tuple[int, ...] = ()
 
     @classmethod
@@ -39,8 +38,6 @@ class InspectDocumentOptions(StrictContract):
             min_image_dpi=options.min_image_dpi,
             adaptive_image_recovery=options.adaptive_image_recovery,
             detect_raster_table_grids=options.detect_raster_table_grids,
-            analyze_pdf_rtl_geometry=options.analyze_pdf_rtl_geometry,
-            decorative_region_max_area_ratio=options.decorative_region_max_area_ratio,
             selected_pdf_pages=options.selected_pdf_pages,
         )
 

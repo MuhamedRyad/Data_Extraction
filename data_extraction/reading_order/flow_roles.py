@@ -39,9 +39,9 @@ def classify_flow_roles(
     """Return immutable copies annotated with semantic roles.
 
     The strongest rule is evidence-based: an image produced as a
-    ``native_text_overlay`` has already had overlapping native text identified
-    and masked for OCR. It must not make the same native text ambiguous merely
-    because their boxes overlap.
+    ``native_text_overlay`` has overlapping native text. A small support image
+    must not make the same native text ambiguous merely due to that overlap;
+    the image remains available for extraction and review.
     """
     page_area: float = max(1.0, page_width * page_height)
     text_regions: tuple[CandidateRegion, ...] = tuple(
@@ -59,13 +59,13 @@ def classify_flow_roles(
             covered_text_count: int = sum(
                 _intersection_ratio(text.bbox, region.bbox) >= 0.80 for text in text_regions
             )
-            if region.image_role == "native_text_overlay" and region.native_text_masked:
+            if region.image_role == "native_text_overlay":
                 # Full-page scans with only a small native text layer remain
                 # reading-order relevant: they may contain unrepresented content.
                 # Exclude only strong support/background cases.
                 if area_ratio >= 0.55 and covered_text_count >= 3:
                     role = FlowRole.DECORATIVE_BACKGROUND.value
-                elif area_ratio <= 0.18:
+                elif area_ratio <= 0.18 and covered_text_count:
                     role = FlowRole.NATIVE_TEXT_OVERLAY_SUPPORT.value
                 else:
                     role = FlowRole.SEMANTIC_FIGURE.value

@@ -10,6 +10,8 @@ from .dispatch_extraction.extract_image import ExtractImageAction
 from .dispatch_extraction.extract_table import ExtractTableAction
 from .dispatch_extraction.extract_text import ExtractTextAction
 from .inspect_document.service import InspectDocumentService
+from .inspection_pipeline import inspect_and_analyze, inspect_document_result
+from .analyze_layout.options import AnalyzeLayoutOptions
 from .analyze_layout.service import AnalyzeLayoutAction
 from .dispatch_extraction.extract_structured_tables import ExtractStructuredTablesAction
 from .providers.structure_contracts import DocumentStructureProvider
@@ -224,6 +226,7 @@ class DataExtractionService:
             options=self._options,
             template_options=self._template_options,
             inspect_service=self._inspect_service,
+            inspect_document=self._inspect_and_analyze_document,
             template_feature=self._template_feature,
             field_verifier=self._field_verifier,
             template_table_service=self._template_table_service,
@@ -231,7 +234,6 @@ class DataExtractionService:
             extract_document_with_options=self._extract_with_options,
         )
         self._extract_document_service: ExtractDocumentService = ExtractDocumentService(self.extract)
-        self._inspect_document_service: InspectDocumentService = self._inspect_service
         self._field_discovery_workflow: FieldDiscoveryWorkflowService = FieldDiscoveryWorkflowService(
             self.extract, self._field_discovery
         )
@@ -244,18 +246,20 @@ class DataExtractionService:
 
     def inspect(self, request: DocumentInput) -> FileManifest:
         """Classify type and each page/region without OCR/model calls."""
-        document = self._inspect_document(request)
+        document = self._inspect_and_analyze_document(request)
         return self._inspect_service.build_manifest(document)
 
-    def _inspect_document(
+    def _inspect_and_analyze_document(
         self,
         request: DocumentInput,
         options: ExtractionOptions | None = None,
     ) -> InspectedDocument:
         effective_options: ExtractionOptions = options or self._options
-        return self._inspect_service.inspect(
+        return inspect_and_analyze(
             InspectDocumentRequest.from_domain(request),
+            self._inspect_service,
             InspectDocumentOptions.from_extraction_options(effective_options),
+            AnalyzeLayoutOptions.from_extraction_options(effective_options),
         )
 
     def extract(self, request: DocumentInput) -> ExtractionResult:
@@ -266,7 +270,7 @@ class DataExtractionService:
         self, request: DocumentInput, options: ExtractionOptions,
     ) -> ExtractionResult:
         """Internal bounded extraction with an explicit immutable option set."""
-        document = self._inspect_document(request, options)
+        document = self._inspect_and_analyze_document(request, options)
         if self._layout_action is not None:
             layout_options: ExtractionOptions = (
                 options.model_copy(update={"layout_provider_fallback_only": True})
@@ -321,7 +325,11 @@ class DataExtractionService:
         return self._template_workflow.extract_with_template(request)
 
     def inspect_result(self, request: InspectDocumentRequest) -> Result[InspectDocumentResponse]:
-        return self._inspect_document_service.execute(request)
+        return inspect_document_result(
+            request,
+            self._inspect_service,
+            analysis_options=AnalyzeLayoutOptions.from_extraction_options(self._options),
+        )
 
     def extract_result(self, request: ExtractDocumentRequest) -> Result[ExtractDocumentResponse]:
         return self._extract_document_service.execute(request)
@@ -354,7 +362,7 @@ class DataExtractionService:
         options: ExtractionOptions = self._options.model_copy(
             update={"analyze_pdf_rtl_geometry": True}
         )
-        inspected: InspectedDocument = self._inspect_document(request, options)
+        inspected: InspectedDocument = self._inspect_and_analyze_document(request, options)
         suggestions: list[PDFRegionOrderProposal] = []
         for page in inspected.pages:
             for region in page.regions:

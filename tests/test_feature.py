@@ -262,7 +262,7 @@ def test_ocr_only_route_never_uses_model() -> None:
     assert not result.ready_for_publication
 
 
-def test_native_text_overlay_does_not_duplicate_ocr() -> None:
+def test_native_text_overlay_and_ocr_remain_reviewable() -> None:
     document: fitz.Document = fitz.open()
     page: fitz.Page = document.new_page(width=420, height=320)
     page.insert_image(fitz.Rect(0, 0, 420, 320), stream=png_with_content())
@@ -274,12 +274,12 @@ def test_native_text_overlay_does_not_duplicate_ocr() -> None:
     manifest = service.inspect(input_file(data, "overlay.pdf"))
     assert any(r.image_role == "native_text_overlay" for r in manifest.pages[0].regions)
     result = service.extract(input_file(data, "overlay.pdf"))
-    assert ocr.calls == 1  # Only the image pixels *outside* the native text regions are OCRed.
+    assert ocr.calls == 1
     assert "SEARCHABLE NATIVE TEXT" in " ".join(r.text or "" for r in result.pages[0].regions)
     image_regions = [region for region in result.pages[0].regions if region.source_kind == RegionKind.IMAGE]
     assert len(image_regions) == 1
     assert image_regions[0].requires_review
-    assert "masked_native_overlay_requires_review" in image_regions[0].review_reasons
+    assert "native_overlay_requires_review" in image_regions[0].review_reasons
 
 
 def test_docx_embedded_image_is_detected() -> None:

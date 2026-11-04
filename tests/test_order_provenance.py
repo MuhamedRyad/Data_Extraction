@@ -124,9 +124,9 @@ def test_overlay_does_not_falsely_claim_reading_order_is_verified() -> None:
         assert item.relations.has_native_text_overlap is True
         assert len(item.relations.overlaps_region_ids) > 0
     raster = next(item for item in output.pages[0].regions if item.source_kind == RegionKind.IMAGE)
-    assert raster.provenance.native_text_masked is True
+    assert raster.provenance.native_text_masked is False
     assert raster.requires_review is True
-    assert "masked_native_overlay_requires_review" in raster.review_reasons
+    assert "native_overlay_requires_review" in raster.review_reasons
 
 
 def test_model_extracted_table_provenance_and_cell_details() -> None:

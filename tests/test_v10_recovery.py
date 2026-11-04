@@ -241,3 +241,40 @@ def test_layout_provider_render_uses_adaptive_budget() -> None:
     result = service.extract(DocumentInput("layout-large.pdf", content, "layout-large"))
     assert "layout_render_downscaled_review" in result.pages[0].warnings
     assert result.pages[0].layout_provider_name == "fake-layout"
+
+
+def test_layout_provider_receives_unrotated_page_geometry_and_render() -> None:
+    from data_extraction import LayoutOrderPrediction
+
+    captured = []
+
+    class LayoutProvider:
+        def predict_order(self, request):
+            captured.append(request)
+            return LayoutOrderPrediction(
+                page_number=request.page_number,
+                ordered_region_ids=tuple(region.region_id for region in request.regions),
+                confidence=0.90,
+                provider_name="rotation-layout",
+            )
+
+    document = fitz.open()
+    page = document.new_page(width=400, height=200)
+    page.insert_text((40, 60), "first", fontsize=14)
+    page.insert_text((240, 150), "second", fontsize=14)
+    page.set_rotation(90)
+    content = document.tobytes()
+    document.close()
+
+    service = DataExtractionService(
+        ExtractionOptions(layout_render_dpi=72, image_route=ImageRoute.DISABLED),
+        layout_provider=LayoutProvider(),
+    )
+    result = service.extract(DocumentInput("rotated-layout.pdf", content, "rotated-layout"))
+
+    assert result.pages[0].layout_provider_name == "rotation-layout"
+    assert len(captured) == 1
+    request = captured[0]
+    assert (request.page_width, request.page_height) == (400.0, 200.0)
+    with Image.open(io.BytesIO(request.image_png)) as rendered:
+        assert rendered.size == (400, 200)

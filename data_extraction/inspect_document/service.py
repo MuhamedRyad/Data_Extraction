@@ -4,7 +4,7 @@ from hashlib import sha256
 from pathlib import Path
 from typing import Callable
 
-from ..analyze_layout.describe_layout import describe_region, page_order_quality
+from ..reading_order.metadata import describe_region, page_order_quality
 from .inspectors.native.excel import _sheet_pages
 from .inspectors.native.flat_files import _csv_pages, _image_pages, _text_pages
 from .inspectors.native.pdf import _pdf_pages
@@ -63,6 +63,10 @@ class InspectDocumentService:
         options: InspectDocumentOptions | None = None,
     ) -> None:
         self._options: InspectDocumentOptions = options or InspectDocumentOptions()
+
+    @property
+    def options(self) -> InspectDocumentOptions:
+        return self._options
 
     def execute(self, request: InspectDocumentRequest) -> Result[InspectDocumentResponse]:
         try:

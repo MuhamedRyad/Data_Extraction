@@ -116,6 +116,23 @@ def test_legal_article_rows_are_not_toc_without_explicit_contents_heading() -> N
     assert detect_toc_table(lines, 600, 800, 5, 20) is None
 
 
+def test_invoice_line_items_are_not_reconstructed_as_toc() -> None:
+    lines = (
+        NativeTextLine("# Description Qty Unit price Amount", (40, 80, 560, 100), "header"),
+        NativeTextLine("1", (45, 300, 55, 320), "n1"),
+        NativeTextLine("A4 copier paper, 75 gsm, ream of 500", (70, 300, 350, 320), "t1"),
+        NativeTextLine("2", (45, 350, 55, 370), "n2"),
+        NativeTextLine("Ballpoint pens, blue, box of 50", (70, 350, 350, 370), "t2"),
+        NativeTextLine("3", (45, 400, 55, 420), "n3"),
+        NativeTextLine("Lever-arch files, A4, pack of 10", (70, 400, 350, 420), "t3"),
+        NativeTextLine("4", (45, 450, 55, 470), "n4"),
+        NativeTextLine("Whiteboard markers, assorted, pack of 4", (70, 450, 350, 470), "t4"),
+        NativeTextLine("5", (45, 500, 55, 520), "n5"),
+        NativeTextLine("Desk organiser, mesh, black", (70, 500, 350, 520), "t5"),
+    )
+    assert detect_toc_table(lines, 600, 800, 1, 1) is None
+
+
 def test_flexible_financial_table_handles_variable_description_token_counts() -> None:
     words = (
         OCRWord("Product", 40, 100, 100, 120, .95),

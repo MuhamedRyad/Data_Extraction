@@ -6,13 +6,18 @@ from dataclasses import replace
 import fitz
 from PIL import Image
 
-from ..shared.models import BoundingBox, DocumentInput, FileKind
+from ..shared.models import (
+    BoundingBox,
+    DocumentInput,
+    FileKind,
+    is_standalone_image_file_kind,
+)
 from .contracts import TemplateAnchor
 
 
 def image_average_hash(image: Image.Image) -> str:
     gray = image.convert("L").resize((16, 16))
-    pixels = list(gray.get_flattened_data())
+    pixels = list(gray.getdata())
     average = sum(pixels) / max(1, len(pixels))
     bits = "".join("1" if value >= average else "0" for value in pixels)
     return f"{int(bits, 2):064x}"
@@ -27,7 +32,7 @@ def page_visual_hashes(
     if document is None:
         return ()
     try:
-        if file_kind == FileKind.IMAGE:
+        if is_standalone_image_file_kind(file_kind):
             with Image.open(io.BytesIO(document.content)) as image:
                 return (image_average_hash(image),)
         if file_kind != FileKind.PDF:
@@ -78,7 +83,7 @@ def with_anchor_visual_hashes(
         return anchors
     images: dict[int, Image.Image] = {}
     try:
-        if file_kind == FileKind.IMAGE:
+        if is_standalone_image_file_kind(file_kind):
             with Image.open(io.BytesIO(document.content)) as source:
                 images[1] = source.convert("RGB").copy()
         elif file_kind == FileKind.PDF:

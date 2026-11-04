@@ -127,7 +127,7 @@ def test_invalid_ocr_confidence_triggers_vision_instead_of_auto_accept() -> None
     assert item.requires_review
 
 
-def test_mask_native_text_overlay_pixels_without_losing_raster_region() -> None:
+def test_native_text_overlay_is_sent_to_ocr_without_masking() -> None:
     doc: fitz.Document = fitz.open()
     page: fitz.Page = doc.new_page(width=400, height=200)
     page.insert_image(fitz.Rect(0, 0, 400, 200), stream=text_png())
@@ -142,12 +142,10 @@ def test_mask_native_text_overlay_pixels_without_losing_raster_region() -> None:
     assert any("NATIVE LABEL" in (r.text or "") for r in native)
     assert len(raster) == 1 and raster[0].requires_review
     assert raster[0].route_reason == "ocr_confidence_gate"
-    assert "masked_native_overlay_requires_review" in raster[0].review_reasons
-    # Native-text bbox is masked white before OCR: prevents double counting.
-    with Image.open(io.BytesIO(spy.last_image)) as rendered:
-        x: int = round(105 * 150 / 72)
-        y: int = round(80 * 150 / 72)
-        assert rendered.convert("RGB").getpixel((x, y)) == (255, 255, 255)
+    assert "native_overlay_requires_review" in raster[0].review_reasons
+    with Image.open(io.BytesIO(spy.last_image)) as ocr_source:
+        assert ocr_source.size == (400, 150)
+        assert ocr_source.mode == "RGB"
 
 
 def test_text_image_not_mistaken_for_grid() -> None:

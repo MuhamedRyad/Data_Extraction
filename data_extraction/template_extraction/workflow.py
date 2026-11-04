@@ -4,7 +4,7 @@ from collections.abc import Callable
 from dataclasses import replace
 from typing import Any
 
-from ..inspect_document import InspectDocumentOptions, InspectDocumentRequest, InspectDocumentService
+from ..inspect_document import InspectDocumentService
 from ..options import ExtractionOptions
 from ..shared.models import DocumentInput, ExtractionResult, ExtractionStatus, FileManifest, InspectedDocument, PageResult
 from ..verify_fields.request import FieldVerificationRequest
@@ -33,6 +33,7 @@ class TemplateWorkflowService:
         options: ExtractionOptions,
         template_options: TemplateExtractionOptions,
         inspect_service: InspectDocumentService,
+        inspect_document: Callable[[DocumentInput], InspectedDocument],
         template_feature: TemplateExtractionFeatureService,
         field_verifier: FieldVerificationService,
         template_table_service: TemplateTableExtractionService,
@@ -41,8 +42,8 @@ class TemplateWorkflowService:
     ) -> None:
         self._options: ExtractionOptions = options
         self._template_options: TemplateExtractionOptions = template_options
-        self._inspect_options: InspectDocumentOptions = InspectDocumentOptions.from_extraction_options(options)
         self._inspect_service: InspectDocumentService = inspect_service
+        self._inspect_document: Callable[[DocumentInput], InspectedDocument] = inspect_document
         self._template_feature: TemplateExtractionFeatureService = template_feature
         self._field_verifier: FieldVerificationService = field_verifier
         self._template_table_service: TemplateTableExtractionService = template_table_service
@@ -522,9 +523,7 @@ class TemplateWorkflowService:
 
     def match_template(self, request: TemplateMatchRequest) -> TemplateMatchResult:
         """Match approved templates cheaply first, then use full extraction only if needed."""
-        inspected: InspectedDocument = self._inspect_service.inspect(
-            InspectDocumentRequest.from_domain(request.document), self._inspect_options
-        )
+        inspected: InspectedDocument = self._inspect_document(request.document)
         manifest: FileManifest = self._inspect_service.build_manifest(inspected)
         preflight = self._template_feature.preflight_match(
             manifest, request.document, request.templates, request.family
@@ -541,9 +540,7 @@ class TemplateWorkflowService:
         only field verification. A template narrows *where to look*; financial
         values still require native evidence or independent OCR consensus.
         """
-        inspected: InspectedDocument = self._inspect_service.inspect(
-            InspectDocumentRequest.from_domain(request.document), self._inspect_options
-        )
+        inspected: InspectedDocument = self._inspect_document(request.document)
         manifest: FileManifest = self._inspect_service.build_manifest(inspected)
         preflight: TemplateMatchResult = self._template_feature.preflight_match(
             manifest, request.document, request.templates, request.family

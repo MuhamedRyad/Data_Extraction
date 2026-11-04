@@ -11,7 +11,14 @@ import fitz
 from PIL import Image
 
 from ..providers.contracts import OCRLayoutProvider, OCRProvider, OCRTextRegion
-from ..shared.models import BoundingBox, ExtractionMethod, ExtractionResult, FileKind, RegionKind
+from ..shared.models import (
+    BoundingBox,
+    ExtractionMethod,
+    ExtractionResult,
+    FileKind,
+    RegionKind,
+    is_standalone_image_file_kind,
+)
 from .errors import FieldVerificationError
 from .options import FieldVerificationOptions
 from .request import FieldDefinition, FieldVerificationRequest
@@ -75,7 +82,9 @@ class FieldVerificationService:
         source_regions: dict[int, tuple[_LocatedText, ...]] = self._source_regions(extraction)
         diagnostics: list[str] = []
 
-        if extraction.manifest.file_kind in (FileKind.PDF, FileKind.IMAGE):
+        if extraction.manifest.file_kind == FileKind.PDF or is_standalone_image_file_kind(
+            extraction.manifest.file_kind
+        ):
             missing_label_pages: set[int] = self._pages_needing_layout_ocr(
                 request.fields, source_regions
             )
@@ -163,8 +172,10 @@ class FieldVerificationService:
                 # Raster OCR usually represents a whole image/page as one region;
                 # it is useful content evidence but not field geometry. Field-level
                 # verification obtains word/line geometry from OCRLayoutProvider.
-                if extraction.manifest.file_kind in (FileKind.PDF, FileKind.IMAGE) \
-                        and region.method != ExtractionMethod.NATIVE:
+                if (
+                    extraction.manifest.file_kind == FileKind.PDF
+                    or is_standalone_image_file_kind(extraction.manifest.file_kind)
+                ) and region.method != ExtractionMethod.NATIVE:
                     continue
                 coordinate_space: str = "pdf" if extraction.manifest.file_kind == FileKind.PDF else "logical"
                 regions.append(_LocatedText(
@@ -389,7 +400,10 @@ class FieldVerificationService:
             ))
 
         crop: bytes | None = None
-        if value_region.bbox is not None and extraction.manifest.file_kind in (FileKind.PDF, FileKind.IMAGE):
+        if value_region.bbox is not None and (
+            extraction.manifest.file_kind == FileKind.PDF
+            or is_standalone_image_file_kind(extraction.manifest.file_kind)
+        ):
             try:
                 crop = self._crop_value(
                     request, extraction, label.page_number,
@@ -609,7 +623,7 @@ class FieldVerificationService:
                     )
                 pixmap = page.get_pixmap(matrix=fitz.Matrix(scale, scale), clip=clip, alpha=False)
                 return pixmap.tobytes("png")
-        if extraction.manifest.file_kind == FileKind.IMAGE:
+        if is_standalone_image_file_kind(extraction.manifest.file_kind):
             with Image.open(io.BytesIO(request.document.content)) as image:
                 frame = image.convert("RGB")
                 crop_box = (
@@ -667,7 +681,7 @@ class FieldVerificationService:
                     )
                 pixmap = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False)
                 return pixmap.tobytes("png")
-        if extraction.manifest.file_kind == FileKind.IMAGE:
+        if is_standalone_image_file_kind(extraction.manifest.file_kind):
             with Image.open(io.BytesIO(request.document.content)) as image:
                 if image.width * image.height > self._options.max_page_pixels:
                     raise FieldVerificationError(

@@ -13,7 +13,7 @@ from dataclasses import dataclass, field
 from threading import Lock
 from typing import Any, Callable
 
-from PIL import Image, ImageFilter, ImageOps
+from PIL import Image, ImageChops, ImageFilter, ImageOps
 
 from ..providers.contracts import OCRProvider, VisionProvider
 from ..shared.models import (CandidateRegion, ExtractedRegion, ExtractionMethod,
@@ -70,6 +70,9 @@ class ExtractImageAction:
             raise ValueError("ExtractImageAction accepts image candidates only")
         image_bytes: bytes = region.image_bytes or b""
         mime: str = region.image_mime_type or "image/png"
+        ocr_image_bytes, ocr_mime = image_bytes, mime
+        if self._ocr is not None and options.image_route in (ImageRoute.AUTO, ImageRoute.OCR_ONLY):
+            ocr_image_bytes, ocr_mime = self._original_image_for_ocr(region, options)
         if not image_bytes or options.image_route == ImageRoute.DISABLED:
             return self._unresolved(region, "image_extraction_disabled_or_unavailable", ())
 
@@ -101,7 +104,7 @@ class ExtractImageAction:
             attempts.append(ExtractionMethod.OCR)
             try:
                 candidate: ProviderTextResult = validate_provider_result(
-                    self._call_ocr(self._ocr.recognize, image_bytes, mime), options)
+                    self._call_ocr(self._ocr.recognize, ocr_image_bytes, ocr_mime), options)
                 if candidate.provider_name in ("multi_pass_conflict", "multi_pass_no_consensus"):
                     multipass_conflict = True
                 if self._has_content(candidate):
@@ -115,7 +118,7 @@ class ExtractImageAction:
                     )
                     if (raster_table or semantic_table_candidate) and candidate.structured_table is None \
                             and options.enable_ocr_table_geometry_recovery:
-                        candidate = self._try_ocr_table_geometry(candidate, image_bytes, mime)
+                        candidate = self._try_ocr_table_geometry(candidate, ocr_image_bytes, ocr_mime)
                     best_ocr = candidate
                     strong: bool = self._strong_confidence(candidate.confidence, options)
                     ai_structure_needed: bool = (
@@ -145,12 +148,12 @@ class ExtractImageAction:
                     and options.max_ocr_preprocess_attempts > 0 \
                     and (self._vision is None or options.image_route == ImageRoute.OCR_ONLY):
                 recovered, text_changed = self._try_preprocessed_ocr(
-                    image_bytes, mime, best_ocr, options
+                    ocr_image_bytes, ocr_mime, best_ocr, options
                 )
                 if recovered is not None and self._has_content(recovered):
                     if raster_table and recovered.structured_table is None \
                             and options.enable_ocr_table_geometry_recovery:
-                        recovered = self._try_ocr_table_geometry(recovered, image_bytes, mime)
+                        recovered = self._try_ocr_table_geometry(recovered, ocr_image_bytes, ocr_mime)
                     improved: bool = (recovered.confidence or -1.0) > (best_ocr.confidence or -1.0)
                     if improved:
                         best_ocr = recovered
@@ -172,7 +175,7 @@ class ExtractImageAction:
             # Tiling is review evidence, never used for raster table structure.
             if not raster_table and options.enable_ocr_tiling:
                 tiled_ocr: ProviderTextResult | None = self._try_tiled_ocr(
-                    image_bytes, mime, options
+                    ocr_image_bytes, ocr_mime, options
                 )
                 if tiled_ocr is not None and self._has_content(tiled_ocr):
                     tiled_strong: bool = self._strong_confidence(tiled_ocr.confidence, options)
@@ -231,6 +234,34 @@ class ExtractImageAction:
         else:
             reason = "image_content_unresolved"
         return self._unresolved(region, reason, tuple(attempts))
+
+    @staticmethod
+    def _original_image_for_ocr(
+        region: CandidateRegion, options: ExtractionOptions,
+    ) -> tuple[bytes, str]:
+        """Use the embedded image when its placement preserves its orientation."""
+        original: bytes | None = region.original_image_bytes
+        if not original or not region.original_image_ocr_safe:
+            return region.image_bytes or b"", region.image_mime_type or "image/png"
+        try:
+            with Image.open(io.BytesIO(original)) as source:
+                if source.width * source.height > options.max_image_pixels:
+                    return region.image_bytes or b"", region.image_mime_type or "image/png"
+                rgba: Image.Image = source.convert("RGBA")
+                if region.original_image_mask_bytes:
+                    with Image.open(io.BytesIO(region.original_image_mask_bytes)) as source_mask:
+                        mask: Image.Image = source_mask.convert("L")
+                        if mask.size != rgba.size:
+                            return region.image_bytes or b"", region.image_mime_type or "image/png"
+                        alpha: Image.Image = ImageChops.multiply(rgba.getchannel("A"), mask)
+                        rgba.putalpha(alpha)
+                background: Image.Image = Image.new("RGB", rgba.size, "white")
+                background.paste(rgba, mask=rgba.getchannel("A"))
+                output = io.BytesIO()
+                background.save(output, format="PNG")
+                return output.getvalue(), "image/png"
+        except (OSError, ValueError, Image.DecompressionBombError):
+            return region.image_bytes or b"", region.image_mime_type or "image/png"
 
     def _try_ocr_table_geometry(
         self, candidate: ProviderTextResult, image_bytes: bytes, mime: str
@@ -410,6 +441,8 @@ class ExtractImageAction:
         if numeric:
             reasons.append("numeric_content_requires_review")
         if region.image_role == "native_text_overlay":
+            reasons.append("native_overlay_requires_review")
+        if region.native_text_masked:
             reasons.append("masked_native_overlay_requires_review")
         if response.confidence is not None and (not isinstance(response.confidence, (int, float))
                                                 or not 0 <= response.confidence <= 1):

@@ -29,6 +29,19 @@ class FileKind(StrEnum):
     WEBP = "webp"
 
 
+STANDALONE_IMAGE_FILE_KINDS: frozenset[FileKind] = frozenset({
+    FileKind.PNG,
+    FileKind.JPG,
+    FileKind.JPEG,
+    FileKind.WEBP,
+})
+
+
+def is_standalone_image_file_kind(file_kind: FileKind) -> bool:
+    """Return whether a file kind is a standalone raster image extension."""
+    return file_kind in STANDALONE_IMAGE_FILE_KINDS
+
+
 class RegionKind(StrEnum):
     TEXT = "text"
     TABLE = "table"
@@ -189,6 +202,15 @@ class TableCellLocation:
 
 
 @dataclass(frozen=True, slots=True)
+class TableTextEvidence:
+    """Native PDF text observed inside a table, before cell reconciliation."""
+
+    text: str
+    bbox: BoundingBox
+    original_index: int | None
+
+
+@dataclass(frozen=True, slots=True)
 class ProviderTextResult:
     text: str
     confidence: float | None
@@ -223,6 +245,7 @@ class ExtractedRegion:
     recovery_applied: bool = False
     recovery_notes: tuple[str, ...] = ()
     critical_for_completeness: bool = True
+    table_text_evidence: tuple[TableTextEvidence, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)

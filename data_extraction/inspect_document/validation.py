@@ -12,6 +12,7 @@ def validate_options(options: InspectDocumentOptions) -> None:
     """Validate options required by inspect and native file discovery only."""
     invalid = (
         options.max_input_bytes < 1
+        or options.max_original_image_bytes < 1
         or options.max_uncompressed_zip_bytes < 1
         or options.max_pages < 1
         or options.max_regions_per_page < 1

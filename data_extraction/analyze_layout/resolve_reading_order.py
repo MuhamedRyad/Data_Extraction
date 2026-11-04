@@ -146,7 +146,7 @@ def resolve_pdf_regions(
     )
 
     if len(active) < 4 or len(native) < 4:
-        ordered: list[CandidateRegion] = _merge_excluded(geometric if not active else _by_geometry(active), excluded)
+        ordered: list[CandidateRegion] = _merge_excluded(_by_geometry(active), excluded)
         resolution = ReadingOrderResolution(
             tuple(region.region_id for region in ordered), (), semantic_class,
             0.92 if semantic_class == PageSemanticClass.SIMPLE_PROSE else 0.65,

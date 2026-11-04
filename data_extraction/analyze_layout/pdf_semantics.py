@@ -69,6 +69,7 @@ def enrich_pdf_semantics(
         warnings: list[str] = list(page.warnings)
         for region in page.regions:
             role: str | None = region.semantic_role
+            furniture_detected: bool = False
             if region.kind == RegionKind.IMAGE and region.image_bytes is not None and region.bbox and page.height:
                 edge: str | None = (
                     "top" if region.bbox[1] / page.height <= .20 else
@@ -77,15 +78,18 @@ def enrich_pdf_semantics(
                 fingerprint: str = sha256(region.image_bytes).hexdigest()
                 if edge is not None and (fingerprint, edge) in repeated_images:
                     role = "repeated_navigation_candidate"
+                    furniture_detected = True
                     warnings.append("pdf_repeated_navigation_inferred_review")
             if region.kind == RegionKind.TEXT and region.bbox and page.height:
                 if (region.bbox[1] / page.height <= .12
                     and (_edge_key(region.text or ""), "page_header_candidate") in repeated):
                     role = "page_header_candidate"
+                    furniture_detected = True
                 elif (region.bbox[3] / page.height >= .88
                       and (_edge_key(region.text or ""), "page_footer_candidate") in repeated):
                     role = "page_footer_candidate"
-            if role:
+                    furniture_detected = True
+            if furniture_detected:
                 warnings.append("pdf_page_furniture_inferred_review")
             elif role is None and region.region_id in anchors:
                 role = "heading_candidate"
